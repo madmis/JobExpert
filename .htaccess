@@ -1,0 +1,24 @@
+# Copyright © 2010 - 2015 SD-GROUP
+# Website: http://sd-group.org.ua/
+
+# Defaul Charset
+AddDefaultCharset UTF-8
+
+# Set the default handler.
+DirectoryIndex index.php 
+
+# Security
+php_flag register_globals off
+# Disable Magic Quotes
+php_flag magic_quotes_gpc off
+
+
+# Mod_rewrite
+RewriteEngine On
+RewriteBase /
+
+# CHPU
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/index.php
+RewriteRule (.*) index.php

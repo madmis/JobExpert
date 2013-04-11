@@ -1,0 +1,5 @@
+<p>You in the directory of our site, was placed the following ad: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong></p>
+<p>View this ad: <a href="%ANNOUNCE_LINK%">%ANNOUNCE_LINK%</a></p>
+<p>Manage ads are available from a custom toolbar: <a href="%USER_PANEL_LINK%">%USER_PANEL_LINK%</a></p>
+<p>If you do not advertise, please let us know at <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p><p>-----------------------</p><p>Yours sincerely,<br />Administration <a href="%SITE_URL%">%SITE_URL%</a></p><p>Contact E-Mail: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p><p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p></p>

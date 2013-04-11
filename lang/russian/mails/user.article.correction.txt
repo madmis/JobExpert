@@ -1,0 +1,5 @@
+<p><br />Добавленная Вами статья - <strong>%ARTICLE_TITLE%</strong> - не прошла модерацию и возвращена на редактирование.</p>
+<p>Дата публикации: <strong>%PUBLICATION_DATE%<br /><br /><span style="color: red;">В статью необходимо внести исправления в соответствии с замечаниями модератора.<br /></span><br /></strong>Замечания модератора:<strong></strong></p><p style="padding-left: 30px;"><strong>%COMMENTS%</strong></p>
+<p><br />Исправление статьи действительно до <strong>%DELDATE%</strong>, после истечения данного срока статья будет удалена!</p><p>Редактирование статьи доступно из пользовательской панели: <a href="%USER_PANEL_LINK%">%USER_PANEL_LINK%</a></p>
+<p>-----------------------<br />С уважением,<br />Администрация <a href="%SITE_URL%">%SITE_URL%<br /></a><br />E-Mail для контактов: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p><strong><em><span style="color: red;">* Это сообщение сгенерированно и отправлено роботом. Отвечать на него не нужно.</span></em></strong></p>

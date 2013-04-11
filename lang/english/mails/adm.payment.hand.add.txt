@@ -1,0 +1,4 @@
+<p>The site added a payment in a manual mode.</p>
+<p><strong>Payment options:</strong></p>
+<p style="padding-left: 30px;"><strong></strong>Number of payment: <strong>%ORDER_ID%</strong><br />Description: <strong>%DESCRIPTION%</strong><br />Amount: <strong>%AMOUNT% %CURRENCY%</strong><br />Payment method: <strong>%PAYMENT_TYPE%</strong><br />Request Date: <strong>%DATE%</strong></p>
+<p>View detailed information is available in the admin panel Site: <a href="%ADMIN_PANEL%">%ADMIN_PANEL%</a></p>

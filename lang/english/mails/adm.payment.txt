@@ -1,0 +1,4 @@
+<p>The site has been paid.</p>
+<p>Payment status: <strong>%STATUS%</strong></p>
+<p>%DATA%</p>
+<p>View detailed information is available in the admin panel Site: <a href="%ADMIN_PANEL%">%ADMIN_PANEL%</a></p>

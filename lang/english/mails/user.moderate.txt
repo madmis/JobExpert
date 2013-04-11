@@ -1,0 +1,6 @@
+<p>You are receiving this email because your account with the email-address was registered on the site <a href="%SITE_URL%">%SITE_NAME%</a></p>
+<p>We inform you that your account has been successfully moderated. Now you can enter the site using the data given by you at registration</p>
+<p>Link for authorization: <a href="%AUTHORIZE_LINK%">%AUTHORIZE_LINK%</a></p>
+<p>If your mail client does not automatically open the page in a browser, copy link to clipboard.</p>
+<p>If you have any questions, please contact the site administration.</p>
+<p><p>-----------------------</p><p>Yours sincerely,<br />Administration <a href="%SITE_URL%">%SITE_URL%</a></p><p>Contact E-Mail: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p><p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p></p>

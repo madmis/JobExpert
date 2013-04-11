@@ -1,0 +1,8 @@
+<p>You received this message because this E-Mail address provided when placing ads on the site <a title="%SITE_URL%" href="%SITE_URL%">%SITE_URL%</a></p>
+<p><strong>f you have not placed an ad and have received this message in error, just ignore the letter.</strong></p>
+<p>Advertisement: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong></p>
+<p><strong><span style="color: red;">WARNING! Service ads on the site is paid.</span></strong></p>
+<p>Payment for accommodation is valid until <strong>%DELDATE%</strong>, after the expiry of this period, unpaid ad will be deleted!</p>
+<p>You can pay on the page: <a title="Quick jump to payment" href="%PAYMENT_LINK%">%PAYMENT_LINK%</a></p>
+<p>If your mail client does not automatically open the page in a browser, copy link to clipboard.</p>
+<p><p>-----------------------</p><p>Yours sincerely,<br />Administration <a href="%SITE_URL%">%SITE_URL%</a></p><p>Contact E-Mail: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p><p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p></p>

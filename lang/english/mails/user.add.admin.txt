@@ -1,0 +1,9 @@
+<p>You are receiving this email because administrator added the account with the email-address site <a href="%SITE_URL%">%SITE_NAME%</a></p>
+<p>Now you can enter the site using the following data:</p>
+<p>Login: <strong>%USER_LOGIN%</strong></p>
+<p>Password: <strong>%USER_PASSWORD%</strong></p>
+<p>After logging in, add the necessary additional data to the user's office and <strong><span style="color: red;">be sure to change your password</span></strong>.</p>
+<p>Link for authorization: <a href="%AUTHORIZE_LINK%">%AUTHORIZE_LINK%</a></p>
+<p>If your mail client does not automatically open the page in a browser, copy link to clipboard.</p>
+<p>If you have any questions, please contact the site administration.</p>
+<p><p>-----------------------</p><p>Yours sincerely,<br />Administration <a href="%SITE_URL%">%SITE_URL%</a></p><p>Contact E-Mail: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p><p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p></p>

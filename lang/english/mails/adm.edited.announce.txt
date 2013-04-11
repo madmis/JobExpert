@@ -1,0 +1,2 @@
+<p>The moderation returned announcement, edited by the user: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong></p>
+<p>Manage ads are available from the Admin site: <a href="%ADMIN_PANEL_LINK%">%ADMIN_PANEL_LINK%</a></p>

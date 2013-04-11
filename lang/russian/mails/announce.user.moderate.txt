@@ -1,0 +1,6 @@
+<p>Ваше объявление: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong> отправлено на модерацию.</p>
+<p><span style="color: #ff0000;"><strong>Обратите внимание!</strong></span><br /><br /><span style="color: #ff0000;">В данный момент на сайте включена модерация новых объявлений.</span><br /><span style="color: #ff0000;">Дальнейшая работа, с Вашим объявлением, будет доступна после проверки и подтверждения модератором.</span></p>
+<p>-----------------------</p>
+<p>С уважением,<br>Администрация <a href="%SITE_URL%">%SITE_URL%</a></p>
+<p>E-Mail для контактов: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p><strong><em><span style="color: red;">* Это  сообщение сгенерированно и отправлено роботом. Отвечать на него не  нужно.</span></em></strong></p>

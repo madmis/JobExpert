@@ -1,0 +1,11 @@
+<p>Вы получили данное сообщение, так как этот E-Mail адрес был указан при размещении объявления на сайте <a title="%SITE_URL%" href="%SITE_URL%">%SITE_URL%</a></p>
+<p>Объявление: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong></p>
+<p><strong><span style="color:red;">В Ваше объявление необходимо внести исправления в соответствии с замечаниями модератора.</span></strong></p>
+<p>Замечания модератора:<div style="border: 2px solid red; margin: 10px; padding: 10px; font-weight: bold;">%COMMENTS%</div></p>
+<p>Исправление объявления действительно до <strong>%DELDATE%</strong>, после истечения данного срока, объявление будет удалено!</p>
+<p>Управление объявлением доступно из пользовательской панели: <a href="%USER_PANEL_LINK%">%USER_PANEL_LINK%</a></p>
+<p>Если Вы не размещали объявление, пожалуйста, сообщите нам об этом по адресу <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p>-----------------------</p>
+<p>С уважением,<br>Администрация <a target="" title="" href="%SITE_URL%">%SITE_URL%</a></p>
+<p>E-Mail для контактов: <a target="" title="" href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p><strong><em><span style="color:red;">* Это сообщение сгенерированно и отправлено роботом. Отвечать на него не нужно.</span></em></strong></p>

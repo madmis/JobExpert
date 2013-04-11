@@ -1,0 +1,9 @@
+<?php
+$arrTitle = array(
+	array('name' => &$return_data['title']),
+	array('name' => &$return_data['company_name']),
+	array('name' => &$arrDataSections[$return_data['id_section']]['name']),
+	array('name' => &$arrDataProfession[$return_data['id_profession']]['name']),
+	array('name' => &$arrDataRegions[$return_data['id_region']]['name']),
+	array('name' => &$arrDataCity[$return_data['id_city']]['name'])
+);

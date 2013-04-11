@@ -1,0 +1,10 @@
+<p><br />На комментарий, оставленный к добавленной вами новости, поступила жалоба.</p>
+<p><strong>Новость:</strong> %NEWS_TITLE% (<a href="%NEWS_LINK%" target="_blank">%NEWS_LINK%</a>)</p>
+<p>Данные комментария</p>
+<p><strong>Дата жалобы:</strong> %COMPLAINT_DATE%<br /><strong>Дата добавления комментария:</strong> %COMMENT_DATE%<br /><strong>Автор:</strong> %AUTHOR%<br /><strong>Комментарий:<br /></strong>%COMMENT_TEXT%<strong><br /></strong></p>
+<p> </p>
+<p><span style="color: #800000;">Для управления комментариями необходимо пройти авторизацию на сайте.</span></p>
+<p>-----------------------</p>
+<p>С уважением,<br />Администрация <a href="%SITE_URL%">%SITE_URL%</a></p>
+<p>E-Mail для контактов: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p><strong><em><span style="color: red;">* Это сообщение сгенерированно и отправлено роботом. Отвечать на него не нужно.</span></em></strong></p>

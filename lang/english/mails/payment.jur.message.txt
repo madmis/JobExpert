@@ -1,0 +1,8 @@
+<p><strong><br />%COMMENT%</strong></p>
+<p>%MESSAGE%<strong></strong></p>
+<p>&nbsp;</p>
+<p>-----------------------</p>
+<p>Yours sincerely,<br />Administration&nbsp;<a href="%SITE_URL%">%SITE_URL%</a></p>
+<p>Contact E-Mail:&nbsp;<a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p>
+<p>&nbsp;</p>

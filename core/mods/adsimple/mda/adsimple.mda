@@ -1,0 +1,81 @@
+a:6:{s:5:"toper";a:7:{i:0;a:3:{s:4:"code";s:939:"<!-- Ukrainian Banner Network 468x60 START -->
+<center><script>
+//<!--
+ubn_user = "77787";
+ubn_page = "1";
+ubn_pid = Math.round((Math.random() * (10000000 - 1)));
+document.write("<iframe src='http://banner.kiev.ua/cgi-bin/bi.cgi?h" +
+ubn_user + "&amp;"+ ubn_pid + "&amp;" + ubn_page + 
+"' frameborder=0 vspace=0 hspace=0 " +
+" width=468 height=60 marginwidth=0 marginheight=0 scrolling=no>");
+document.write("<a href='http://banner.kiev.ua/cgi-bin/bg.cgi?" +
+ubn_user + "&amp;"+ ubn_pid + "&amp;" + ubn_page + "' target=_top>");
+document.write("<img border=0 src='http://banner.kiev.ua/" +
+"cgi-bin/bi.cgi?i" + ubn_user + "&amp;" + ubn_pid + "&amp;" + ubn_page +
+"' width=468 height=60 alt='Ukrainian Banner Network'></a>");
+document.write("</iframe>");
+//-->
+</script><br>
+<small><a href="http://banner.kiev.ua/" target="_top">Ukrainian Banner Network</a></small>
+</center>
+<!-- Ukrainian Banner Network 468x60 END -->";s:8:"htmlcode";s:1255:"&lt;!-- Ukrainian Banner Network 468x60 START --&gt;
+&lt;center&gt;&lt;script&gt;
+//&lt;!--
+ubn_user = &quot;77787&quot;;
+ubn_page = &quot;1&quot;;
+ubn_pid = Math.round((Math.random() * (10000000 - 1)));
+document.write(&quot;&lt;iframe src='http://banner.kiev.ua/cgi-bin/bi.cgi?h&quot; +
+ubn_user + &quot;&amp;amp;&quot;+ ubn_pid + &quot;&amp;amp;&quot; + ubn_page + 
+&quot;' frameborder=0 vspace=0 hspace=0 &quot; +
+&quot; width=468 height=60 marginwidth=0 marginheight=0 scrolling=no&gt;&quot;);
+document.write(&quot;&lt;a href='http://banner.kiev.ua/cgi-bin/bg.cgi?&quot; +
+ubn_user + &quot;&amp;amp;&quot;+ ubn_pid + &quot;&amp;amp;&quot; + ubn_page + &quot;' target=_top&gt;&quot;);
+document.write(&quot;&lt;img border=0 src='http://banner.kiev.ua/&quot; +
+&quot;cgi-bin/bi.cgi?i&quot; + ubn_user + &quot;&amp;amp;&quot; + ubn_pid + &quot;&amp;amp;&quot; + ubn_page +
+&quot;' width=468 height=60 alt='Ukrainian Banner Network'&gt;&lt;/a&gt;&quot;);
+document.write(&quot;&lt;/iframe&gt;&quot;);
+//--&gt;
+&lt;/script&gt;&lt;br&gt;
+&lt;small&gt;&lt;a href=&quot;http://banner.kiev.ua/&quot; target=&quot;_top&quot;&gt;Ukrainian Banner Network&lt;/a&gt;&lt;/small&gt;
+&lt;/center&gt;
+&lt;!-- Ukrainian Banner Network 468x60 END --&gt;";s:5:"token";s:6:"active";}i:1;a:3:{s:4:"code";s:85:"<script type="text/javascript" src="http://z410.takru.com/in.php?id=411563"></script>";s:8:"htmlcode";s:117:"&lt;script type=&quot;text/javascript&quot; src=&quot;http://z410.takru.com/in.php?id=411563&quot;&gt;&lt;/script&gt;";s:5:"token";s:6:"active";}i:2;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/7.jpg" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/7.jpg&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:3;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/7.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/7.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:4;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/3.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/3.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:5;a:3:{s:4:"code";s:101:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/21.gif" border=0></a>";s:8:"htmlcode";s:139:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/21.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:6;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/9.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/9.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}}s:17:"advertisement_top";a:3:{i:0;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/7.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/7.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:1;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/3.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/3.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:2;a:3:{s:4:"code";s:101:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/21.gif" border=0></a>";s:8:"htmlcode";s:139:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/21.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}}s:20:"advertisement_bottom";a:3:{i:0;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/7.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/7.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:1;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/3.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/3.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:2;a:3:{s:4:"code";s:101:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/21.gif" border=0></a>";s:8:"htmlcode";s:139:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/21.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}}s:8:"bottomer";a:7:{i:1;a:3:{s:4:"code";s:85:"<script type="text/javascript" src="http://z410.takru.com/in.php?id=411563"></script>";s:8:"htmlcode";s:117:"&lt;script type=&quot;text/javascript&quot; src=&quot;http://z410.takru.com/in.php?id=411563&quot;&gt;&lt;/script&gt;";s:5:"token";s:6:"active";}i:2;a:3:{s:4:"code";s:939:"<!-- Ukrainian Banner Network 468x60 START -->
+<center><script>
+//<!--
+ubn_user = "77787";
+ubn_page = "1";
+ubn_pid = Math.round((Math.random() * (10000000 - 1)));
+document.write("<iframe src='http://banner.kiev.ua/cgi-bin/bi.cgi?h" +
+ubn_user + "&amp;"+ ubn_pid + "&amp;" + ubn_page + 
+"' frameborder=0 vspace=0 hspace=0 " +
+" width=468 height=60 marginwidth=0 marginheight=0 scrolling=no>");
+document.write("<a href='http://banner.kiev.ua/cgi-bin/bg.cgi?" +
+ubn_user + "&amp;"+ ubn_pid + "&amp;" + ubn_page + "' target=_top>");
+document.write("<img border=0 src='http://banner.kiev.ua/" +
+"cgi-bin/bi.cgi?i" + ubn_user + "&amp;" + ubn_pid + "&amp;" + ubn_page +
+"' width=468 height=60 alt='Ukrainian Banner Network'></a>");
+document.write("</iframe>");
+//-->
+</script><br>
+<small><a href="http://banner.kiev.ua/" target="_top">Ukrainian Banner Network</a></small>
+</center>
+<!-- Ukrainian Banner Network 468x60 END -->";s:8:"htmlcode";s:1255:"&lt;!-- Ukrainian Banner Network 468x60 START --&gt;
+&lt;center&gt;&lt;script&gt;
+//&lt;!--
+ubn_user = &quot;77787&quot;;
+ubn_page = &quot;1&quot;;
+ubn_pid = Math.round((Math.random() * (10000000 - 1)));
+document.write(&quot;&lt;iframe src='http://banner.kiev.ua/cgi-bin/bi.cgi?h&quot; +
+ubn_user + &quot;&amp;amp;&quot;+ ubn_pid + &quot;&amp;amp;&quot; + ubn_page + 
+&quot;' frameborder=0 vspace=0 hspace=0 &quot; +
+&quot; width=468 height=60 marginwidth=0 marginheight=0 scrolling=no&gt;&quot;);
+document.write(&quot;&lt;a href='http://banner.kiev.ua/cgi-bin/bg.cgi?&quot; +
+ubn_user + &quot;&amp;amp;&quot;+ ubn_pid + &quot;&amp;amp;&quot; + ubn_page + &quot;' target=_top&gt;&quot;);
+document.write(&quot;&lt;img border=0 src='http://banner.kiev.ua/&quot; +
+&quot;cgi-bin/bi.cgi?i&quot; + ubn_user + &quot;&amp;amp;&quot; + ubn_pid + &quot;&amp;amp;&quot; + ubn_page +
+&quot;' width=468 height=60 alt='Ukrainian Banner Network'&gt;&lt;/a&gt;&quot;);
+document.write(&quot;&lt;/iframe&gt;&quot;);
+//--&gt;
+&lt;/script&gt;&lt;br&gt;
+&lt;small&gt;&lt;a href=&quot;http://banner.kiev.ua/&quot; target=&quot;_top&quot;&gt;Ukrainian Banner Network&lt;/a&gt;&lt;/small&gt;
+&lt;/center&gt;
+&lt;!-- Ukrainian Banner Network 468x60 END --&gt;";s:5:"token";s:6:"active";}i:3;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/7.jpg" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/7.jpg&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:4;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/7.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/7.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:5;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/3.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/3.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:6;a:3:{s:4:"code";s:101:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/21.gif" border=0></a>";s:8:"htmlcode";s:139:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/21.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:7;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/9.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/9.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}}s:18:"advertisement_left";a:4:{i:0;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/3.jpg" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/3.jpg&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:1;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/1.jpg" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/1.jpg&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:2;a:3:{s:4:"code";s:101:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/10.jpg" border=0></a>";s:8:"htmlcode";s:139:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/10.jpg&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:3;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/4.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/4.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}}s:19:"advertisement_right";a:4:{i:0;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/3.jpg" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/3.jpg&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:1;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/1.jpg" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/1.jpg&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:2;a:3:{s:4:"code";s:101:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/10.jpg" border=0></a>";s:8:"htmlcode";s:139:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/10.jpg&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}i:3;a:3:{s:4:"code";s:100:"<a href="http://tak.ru/partner.php?id=38768"><img src="http://banners.takru.com/4.gif" border=0></a>";s:8:"htmlcode";s:138:"&lt;a href=&quot;http://tak.ru/partner.php?id=38768&quot;&gt;&lt;img src=&quot;http://banners.takru.com/4.gif&quot; border=0&gt;&lt;/a&gt;";s:5:"token";s:6:"active";}}}

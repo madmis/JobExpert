@@ -1,0 +1,3 @@
+<p>The site registered a new user.</p>
+<p><strong>Login (E-Mail):</strong> %EMAIL%</p>
+<p>View detailed information is available in the admin panel Site: <a href="%ADMIN_PANEL%">%ADMIN_PANEL%</a></p>

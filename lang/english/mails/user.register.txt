@@ -1,0 +1,2 @@
+<p>You received this message because today <strong>%DATE%</strong> This E-Mail address was provided when the user logs on our site.</p>
+<p>If you do not pass the registration, please notify us.</p><p><p>-----------------------</p><p>Yours sincerely,<br />Administration <a href="%SITE_URL%">%SITE_URL%</a></p><p>Contact E-Mail: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p><p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p></p>

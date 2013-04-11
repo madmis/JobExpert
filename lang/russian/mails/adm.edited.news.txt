@@ -1,0 +1,1 @@
+<p><br />На модерацию возвращена новость, отредактированная пользователем: <strong>%NEWS_TITLE%</strong></p><p>ID новости: <strong>%NEWS_ID%</strong><br />Дата публикации: <strong>%PUBLICATION_DATE%</strong></p><p><br />Управление новостями доступно из панели администратора сайта: <a href="%ADMIN_PANEL_LINK%">%ADMIN_PANEL_LINK%</a></p><p> </p>

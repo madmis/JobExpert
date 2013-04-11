@@ -1,0 +1,5 @@
+# Copyright © 2010 - 2015 SD-GROUP
+# Website: http://sd-group.org.ua/
+
+# Set the default handler.
+DirectoryIndex index.html

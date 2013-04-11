@@ -1,0 +1,10 @@
+<p><br /><span id="result_box" lang="en"><span class="hps" title="Нажмите, чтобы увидеть альтернативный перевод">On the</span> <span class="hps" title="Нажмите, чтобы увидеть альтернативный перевод">comments left</span> <span class="hps" title="Нажмите, чтобы увидеть альтернативный перевод">by you</span> article<span title="Нажмите, чтобы увидеть альтернативный перевод">,</span> <span class="hps" title="Нажмите, чтобы увидеть альтернативный перевод">there is a complaint</span><span title="Нажмите, чтобы увидеть альтернативный перевод">.</span></span></p>
+<p><strong>Article:</strong> %ARTICLE_TITLE% (<a href="%ARTICLE_LINK%" target="_blank">%ARTICLE_LINK%</a>)</p>
+<p>Comment detail</p>
+<p><strong>Date of complaint:</strong> %COMPLAINT_DATE%<br /><strong>Add date:</strong> %COMMENT_DATE%<br /><strong>Author:</strong> %AUTHOR%<br /><strong>Comment:<br /></strong>%COMMENT_TEXT%<strong><br /></strong></p>
+<p>&nbsp;</p>
+<p><span style="color: #800000;">To manage the comments must be authorized on the site.</span></p>
+<p>-----------------------</p>
+<p>Yours sincerely,<br />Administration <a title="" href="%SITE_URL%" target="">%SITE_URL%</a></p>
+<p>Contact E-Mail: <a title="" href="mailto:%ADMIN_EMAIL%" target="">%ADMIN_EMAIL%</a></p>
+<p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p>

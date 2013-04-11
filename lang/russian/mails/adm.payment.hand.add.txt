@@ -1,0 +1,4 @@
+<p>На сайте добавлен платеж в ручном режиме.</p>
+<p><strong>Параметры платежа:</strong></p>
+<p style="padding-left: 30px;"><strong></strong>Номер оплаты: <strong>%ORDER_ID%</strong><br />Описание: <strong>%DESCRIPTION%</strong><br />Сумма: <strong>%AMOUNT% %CURRENCY%</strong><br />Тип оплаты: <strong>%PAYMENT_TYPE%</strong><br />Дата запроса: <strong>%DATE%</strong></p>
+<p>Просмотр детальной информации доступен в админ-панели сайта: <a href="%ADMIN_PANEL%">%ADMIN_PANEL%</a></p>

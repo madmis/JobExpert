@@ -1,0 +1,382 @@
+<?php
+(!empty($_GET['configFile']) && file_exists($_GET['configFile'])) ? require_once($_GET['configFile']) : die('Not received param of name require the configuration file or the file does not exist!');
+
+if(!$tinybrowser['allowedit'] && !$tinybrowser['allowdelete']) die (TB_EDDENIED);
+
+// Assign file operation variables
+//$typenow = isset($_GET['type']) ? $_GET['type'] : 'image';
+if (!empty($_GET['type']) && array_key_exists($_GET['type'], $tinybrowser['path'])) {
+    $typenow = $_GET['type'];
+} else {
+    $typenow = 'image';
+}
+
+$foldernow = isset($_REQUEST['folder']) ? urldecode($_REQUEST['folder']) : '';
+$destfolder = isset($_POST['destination']) ? $tinybrowser['path'][$typenow].urldecode($_POST['destination']) : '';
+$destfoldernow = isset($_POST['destination']) ? urldecode($_POST['destination']) : $foldernow;
+
+// Assign edit path
+$editpath = $tinybrowser['path'][$typenow].$foldernow;
+
+// Assign browsing options
+$sortbynow = isset($_REQUEST['sortby']) ? $_REQUEST['sortby'] : $tinybrowser['order']['by'];
+$sorttypenow = isset($_REQUEST['sorttype']) ? $_REQUEST['sorttype'] : $tinybrowser['order']['type'];
+$sorttypeflip = $sorttypenow == 'asc' ? 'desc' : 'asc';
+$viewtypenow = 'detail';
+$findnow = isset($_REQUEST['find']) && !empty($_REQUEST['find']) ? $_REQUEST['find'] : false;
+$actionnow = isset($_REQUEST['action']) ? $_REQUEST['action'] : $tinybrowser['defaultaction'];
+$showpagenow = isset($_REQUEST['showpage']) ? $_REQUEST['showpage'] : 0;
+
+// Assign url pass variables
+$passfolder = '&folder='.urlencode($foldernow);
+$passaction = '&action='.$actionnow;
+$passfind = '&action='.$findnow;
+$passsortby = '&sortby='.$sortbynow.'&sorttype='.$sorttypenow;
+
+// Assign sort parameters for column header links
+$sortbyget = array();
+$sortbyget['name'] = '&sortby=name';
+$sortbyget['size'] = '&sortby=size'; 
+$sortbyget['type'] = '&sortby=type'; 
+$sortbyget['modified'] = '&sortby=modified';
+$sortbyget['dimensions'] = '&sortby=dimensions'; 
+$sortbyget[$sortbynow] .= '&sorttype='.$sorttypeflip;
+
+// Assign css style for current sort type column
+$thclass = array();
+$thclass['name'] = '';
+$thclass['size'] = ''; 
+$thclass['type'] = ''; 
+$thclass['modified'] = '';
+$thclass['dimensions'] = ''; 
+$thclass[$sortbynow] = ' class="'.$sorttypenow.'"';
+
+// Initalise alert array
+$notify = array(
+	'type' => array(),
+	'message' => array()
+);
+$deleteqty = 0;
+$renameqty = 0;
+$resizeqty = 0;
+$rotateqty = 0;
+$moveqty = 0;
+$errorqty = 0;
+
+// Set when rotating images to force refresh
+$imagerefresh = '';
+
+// Delete any checked files
+if(isset($_POST['deletefile'])) {
+	foreach($_POST['deletefile'] as $delthis => $val) {
+		$delthisfile = $tinybrowser['docroot'].$editpath.$_POST['actionfile'][$delthis];
+		if ( file_exists($delthisfile) && unlink($delthisfile) ) $deleteqty++; else $errorqty++;
+	}
+}
+
+// Rename any files with changed name
+if(isset($_POST['renamefile'])) {
+	foreach($_POST['renamefile'] as $namethis => $newname) {
+		if($_POST['actionfile'][$namethis] != $newname.$_POST['renameext'][$namethis]) {
+			$namethisfilefrom = $tinybrowser['docroot'].$editpath.$_POST['actionfile'][$namethis];
+			$namethisfileto = $tinybrowser['docroot'].$editpath.clean_filename($newname.$_POST['renameext'][$namethis]);
+			if (file_exists($namethisfilefrom) && rename($namethisfilefrom,$namethisfileto)) $renameqty++; else $errorqty++;
+		}
+	}
+}
+
+// Move any checked files
+if(isset($_POST['movefile'])) {
+	foreach($_POST['movefile'] as $movethis => $val) {
+		$movethisfile = $tinybrowser['docroot'].$editpath.$_POST['actionfile'][$movethis];
+		$movefiledest = $tinybrowser['docroot'].$destfolder.$_POST['actionfile'][$movethis];
+		if (!file_exists($movefiledest) && file_exists($movethisfile) && copy($movethisfile,$movefiledest)) {
+			$moveqty++;
+			unlink($movethisfile);
+		}
+		else $errorqty++;
+	}
+}
+
+// Resize any files with new size
+if(isset($_POST['resizefile'])) {
+	foreach($_POST['resizefile'] as $sizethis => $newsize) {
+		$newsize = intval($newsize);
+		if($newsize) {
+			// detect silly sizes
+			if($newsize > $tinybrowser['thumbsize']) {
+				// do image resize
+				$targetimg = $tinybrowser['docroot'].$editpath.$_POST['actionfile'][$sizethis];
+				if (file_exists($targetimg)) {
+					$mime = getimagesize($targetimg);
+					if($_POST['resizetype'][$sizethis]=='width') {
+						$rw = $newsize;
+						$rh = $mime[1];
+					} else {
+						$rw = $mime[0];
+						$rh = $newsize;
+					}
+					$im = convert_image($targetimg,$mime['mime']);
+					resizeimage($im,$rw,$rh,$targetimg,$tinybrowser['imagequality'],$mime['mime']);
+					imagedestroy($im);
+					$resizeqty++;
+				} else $errorqty++;
+			} else $errorqty++;
+		}
+	}
+}
+
+// Rotate any selected files
+if(isset($_POST['rotatefile'])) {
+	$imagerefresh = '?refresh='.uniqid('');
+	foreach($_POST['rotatefile'] as $rotatethis => $direction) {
+		if($direction != 'none') {
+			$targetimg = $tinybrowser['docroot'].$editpath.$_POST['actionfile'][$rotatethis];
+			if (file_exists($targetimg)) {
+				// rotate image
+				if($direction == 'clock') $degree=270; else $degree=90;
+				$mime = getimagesize($targetimg);
+				$im = convert_image($targetimg,$mime['mime']);
+				$newim = imagerotate($im, $degree, 0);
+				imagedestroy($im);
+				if($mime['mime'] == 'image/pjpeg' || $mime['mime'] == 'image/jpeg') imagejpeg ($newim,$targetimg,$tinybrowser['imagequality']);
+				elseif($mime['mime'] == 'image/x-png' || $mime['mime'] == 'image/png') imagepng ($newim,$targetimg,substr($tinybrowser['imagequality'],0,1));
+				elseif($mime['mime'] == 'image/gif') imagegif ($newim,$targetimg);
+				imagedestroy($newim);
+				$rotateqty++;
+			} else $errorqty++;
+		}
+	}
+}
+
+// Read directory contents and populate $file array
+$dh = @opendir($tinybrowser['docroot'].$editpath);
+$file = array();
+while (false!==($filename=@readdir($dh))) {
+	if(is_file($tinybrowser['docroot'].$editpath.$filename) && !empty($tinybrowser['filetype'][$typenow]) && (false !== strpos($tinybrowser['filetype']['image'], end(explode('.', $filename))) || false !== strpos('*', end(explode('.', $filename))))) {
+		// search file name if search term entered
+		$exists = $findnow ? preg_match('/'.preg_quote(clean_filename($findnow)).'/i', $filename) : true;
+
+		if( $exists ) {
+			$file['name'][] = $filename;
+			$file['sortname'][] = strtolower($filename);
+			$file['modified'][] = filemtime($tinybrowser['docroot'].$editpath.$filename);
+			$file['size'][] = filesize($tinybrowser['docroot'].$editpath.$filename);
+
+			if($typenow=='image' && $imginfo=getimagesize($tinybrowser['docroot'].$editpath.$filename)) {
+				$file['width'][] = $imginfo[0];
+				$file['height'][] = $imginfo[1];
+				$file['dimensions'][] = $imginfo[0] + $imginfo[1];
+				$file['type'][] = $imginfo['mime'];
+			} else {
+				$file['width'][] = 'N/A';
+				$file['height'][] = 'N/A';
+				$file['dimensions'][] = 'N/A';
+				$file['type'][] = returnMIMEType($filename);
+			}
+		}
+	}
+}
+@closedir($dh);
+
+// Assign directory structure to array
+$editdirs=array();
+dirtree($editdirs,$tinybrowser['docroot'],$tinybrowser['path'][$typenow],$tinybrowser['extFilesGlob'][$typenow]);
+
+if($deleteqty>0) { // generate alert if files deleted
+	$notify['type'][]='success';
+	$notify['message'][]=sprintf(TB_MSGDELETE, $deleteqty);
+} elseif($renameqty>0) { // generate alert if files renamed
+	$notify['type'][]='success';
+	$notify['message'][]=sprintf(TB_MSGRENAME, $renameqty);
+} elseif($moveqty>0) { // generate alert if files renamed
+	$notify['type'][]='success';
+	$notify['message'][]=sprintf(TB_MSGMOVE, $moveqty);
+} elseif($resizeqty>0) { // generate alert if images resized
+	$notify['type'][]='success';
+	$notify['message'][]=sprintf(TB_MSGRESIZE, $resizeqty);
+} elseif($rotateqty>0) { // generate alert if images rotated
+	$notify['type'][]='success';
+	$notify['message'][]=sprintf(TB_MSGROTATE, $rotateqty);
+}
+
+
+if($errorqty>0) { // generate alert if file errors encountered
+	$notify['type'][]='failure';
+	$notify['message'][]=sprintf(TB_MSGEDITERR, $errorqty);
+}
+
+// determine sort order
+$sortorder = ($sorttypenow == 'asc' ? SORT_ASC : SORT_DESC);
+$num_of_files = (isset($file['name']) ? count($file['name']) : 0);
+
+if($num_of_files>0) sortfileorder($sortbynow,$sortorder,$file); // sort files by selected order
+
+// determine pagination
+if($tinybrowser['pagination']>0) {
+	$showpagestart = ($showpagenow ? ($_REQUEST['showpage']*$tinybrowser['pagination'])-$tinybrowser['pagination'] : 0);
+	$showpageend = $showpagestart+$tinybrowser['pagination'];
+	if($showpageend>$num_of_files) $showpageend = $num_of_files;
+} else {
+	$showpagestart = 0;
+	$showpageend = $num_of_files;
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>TinyBrowser :: <?php echo TB_CONTROL; ?></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" media="all" href="css/stylefull_tinybrowser.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style_tinybrowser.css.php?configFile=<?php echo $_GET['configFile']; ?>" />
+<script language="javascript" type="text/javascript" src="js/tinybrowser.js"></script>
+</head>
+<body onload="rowHighlight();">
+<?php
+if(count($notify['type'])>0) alert($notify);
+form_open('foldertab',false,basename($_SERVER['SCRIPT_NAME']),'?configFile='.$_GET['configFile'].'&amp;type='.$typenow);
+?>
+<div class="tabs">
+<ul>
+<?php if($tinybrowser['allowbrowse']) { ?><li id="browse_tab"><span><a href="tinybrowser.php<?php echo '?configFile='.$_GET['configFile'].'&amp;type='.$typenow.$passfolder; ?>"><?php echo TB_BROWSE; ?></a></span></li><?php } ?>
+<li id="edit_tab" class="current"><span><a href="control.php<?php echo '?configFile='.$_GET['configFile'].'&amp;type='.$typenow.$passfolder; ?>"><?php echo TB_CONTROL; ?></a></span></li>
+<?php if($tinybrowser['allowupload']) { ?><li id="upload_tab"><span><a href="upload.php<?php echo '?configFile='.$_GET['configFile'].'&amp;type='.$typenow.$passfolder; ?>"><?php echo TB_UPLOAD; ?></a></span></li><?php } ?>
+<?php if($tinybrowser['allowfolders']) { ?><li id="folders_tab"><span><a href="folders.php<?php echo '?configFile='.$_GET['configFile'].'&amp;type='.$typenow.$passfolder; ?>"><?php echo TB_FOLDERS; ?></a></span></li><?php }
+// Display folder select, if multiple exist
+if(count($editdirs)>1) {
+	echo '<li id="folder_tab" class="right"><span>';
+	form_select($editdirs,'folder',TB_FOLDERCURR,urlencode($foldernow),true);
+	form_hidden_input('sortby',$sortbynow);
+	form_hidden_input('sorttype',$sorttypenow);
+	form_hidden_input('showpage',$showpagenow);
+	form_hidden_input('action',$actionnow);
+	echo '</span></li>';
+}
+?>
+</ul>
+</div>
+</form>
+<div class="panel_wrapper">
+<div id="general_panel" class="panel currentmod">
+<fieldset>
+<legend><?php echo TB_CONTROLFILES; ?></legend>
+<?php form_open('edit','custom',basename($_SERVER['SCRIPT_NAME']),'?configFile='.$_GET['configFile'].'&amp;type='.$typenow.$passfolder); ?>
+<div class="pushleft">
+<?php
+// Assign edit actions based on file type and permissions
+$select = array();
+if($tinybrowser['allowdelete']) $select[] = array('delete',TB_DELETE);
+if($tinybrowser['allowedit']) $select[] = array('rename',TB_RENAME);
+if($tinybrowser['allowfolders']) $select[] = array('move',TB_MOVE);
+if($typenow=='image' && $tinybrowser['allowedit']) {
+	$select[] = array('resize',TB_RESIZE);
+	$select[] = array('rotate',TB_ROTATE);
+}
+form_select($select,'action',TB_ACTION,$actionnow,true);
+
+// Show page select if pagination is set
+if($tinybrowser['pagination']>0) {
+	$pagelimit = ceil($num_of_files/$tinybrowser['pagination'])+1;
+	$page = array();
+	for($i=1;$i<$pagelimit;$i++) $page[] = array($i, TB_PAGE.' '.$i);
+	if($i>2) form_select($page,'showpage',SHOW,$showpagenow,true);
+}
+?>
+</div>
+<div class="pushright">
+<?php
+form_hidden_input('sortby',$sortbynow);
+form_hidden_input('sorttype',$sorttypenow);
+form_text_input('find',false,$findnow,25,50);
+form_submit_button('search',TB_SEARCH,'');
+?>
+</div>
+<?php
+form_open('actionform','custom',basename($_SERVER['SCRIPT_NAME']),'?configFile='.$_GET['configFile'].'&amp;type='.$typenow.$passfolder);
+if($actionnow=='move') { 
+	echo'<div class="pushleft">';
+	form_select($editdirs,'destination',TB_FOLDERDEST,urlencode($destfoldernow),false);
+	echo '</div>';
+}
+if($typenow=='image') {
+	$selectresize = array(
+		array('width',TB_WIDTH),
+		array('height',TB_HEIGHT)
+	);
+}
+switch($actionnow) {
+	case 'delete': $actionhead = TB_DELETE; break;
+	case 'rename': $actionhead = TB_RENAME; break;
+	case 'resize': $actionhead = TB_RESIZE; break;
+	case 'rotate': $actionhead = TB_ROTATE; break;
+ 	case 'move': $actionhead = TB_MOVE; break;
+	default:
+}
+?>
+<div class="tabularwrapper">
+<table class="browse">
+<tr>
+<th><a href="<?php echo '?configFile='.$_GET['configFile'].'&amp;type='.$typenow.$passaction.$passfolder.$sortbyget['name']; ?>"<?php echo $thclass['name']; ?>><?php echo TB_FILENAME; ?></a></th>
+<th><a href="<?php echo '?configFile='.$_GET['configFile'].'&amp;type='.$typenow.$passaction.$passfolder.$sortbyget['size']; ?>"<?php echo $thclass['size']; ?>><?php echo TB_SIZE; ?></a></th>
+<th><a href="<?php echo '?configFile='.$_GET['configFile'].'&amp;type='.$typenow.$passaction.$passfolder.$sortbyget['type']; ?>"<?php echo $thclass['type']; ?>><?php echo TB_TYPE; ?></th>
+<th class="nohvr"><?php echo $actionhead; ?></th>
+</tr>
+<?php
+for($i=$showpagestart;$i<$showpageend;$i++) {
+	$alt = IsOdd($i) ? 'r1' : 'r0';
+	echo '<tr class="'.$alt.'">';
+	if($typenow=='image')
+	{
+		$style = '';
+		if ($file['width'][$i] > $tinybrowser['imgdetailsize'] || $file['height'][$i] > $tinybrowser['imgdetailsize'])
+		{
+			if ($file['width'][$i] > $file['height'][$i])
+			{
+				$style .= 'width: ' . $tinybrowser['imgdetailsize'] . 'px; height: ' . ceil($file['height'][$i] / $file['width'][$i] * $tinybrowser['imgdetailsize']) . 'px;';
+			}
+			else if ($file['height'][$i] > $file['width'][$i])
+			{
+				$style .= 'width: ' . floor($file['width'][$i] / $file['height'][$i] * $tinybrowser['imgdetailsize']) . 'px; height: ' . $tinybrowser['imgdetailsize'] . 'px;';
+			}
+			else
+			{
+				$style .= 'width: 100%; height: 100%;';
+			}
+		}
+		(!empty($style)) ? $style = ' style="' . $style . '"' : null;
+
+		echo '<td><span class="imghover" title="'.$file['name'][$i].'&#13;&#10;'.TB_DIMENSIONS.': '.$file['width'][$i].' x '.$file['height'][$i].'&#13;&#10;'.TB_DATE.': '.date($tinybrowser['dateformat'],$file['modified'][$i]).'"><img src="'.$editpath.$file['name'][$i].$imagerefresh.'" alt=""' . $style . '>' .truncate_text($file['name'][$i],30).'</span></td>';
+	}
+	else
+	{
+		echo '<td title="'.$file['name'][$i].'&#13;&#10;'.TB_DATE.': '.date($tinybrowser['dateformat'],$file['modified'][$i]).'">'.truncate_text($file['name'][$i],30).'</td>';
+	}
+	echo '<td>'.bytestostring($file['size'][$i],1).'</td><td>'.$file['type'][$i].'</td>'.'<td>';
+	form_hidden_input('actionfile['.$i.']',$file['name'][$i]);
+	switch($actionnow) {
+		case 'delete': echo '<input class="del" type="checkbox" name="deletefile['.$i.']" value="1" />';	break;
+		case 'rename':
+			$ext = '.'.end(explode('.',$file['name'][$i]));
+			form_hidden_input('renameext['.$i.']',$ext);
+			form_text_input('renamefile['.$i.']',false,basename($file['name'][$i],$ext),30,120); echo $ext;
+		break;
+		case 'resize': form_text_input('resizefile['.$i.']',false,'',4,4); form_select($selectresize,'resizetype['.$i.']',false,'',false); break;
+		case 'rotate': echo '<img src="img/rotate_c.gif" alt="'.TB_ROTATECW.'" /><input class="rad" type="radio" name="rotatefile['.$i.']" value="clock"><img src="img/rotate_ac.gif" alt="'.TB_ROTATECCW.'" /><input class="rad" type="radio" name="rotatefile['.$i.']" value="anticlock">'.TB_NONE.'<input class="rad" type="radio" name="rotatefile['.$i.']" value="none" checked>'; break;
+		case 'move': echo '<input class="del" type="checkbox" name="movefile['.$i.']" value="1" />'; break;
+		default:
+	}
+	echo "</td></tr>\n";
+}
+echo "</table></div>\n".'<div class="pushright">';
+if($tinybrowser['allowdelete'] || $tinybrowser['allowedit']) {
+	form_hidden_input('sortby',$sortbynow);
+	form_hidden_input('sorttype',$sorttypenow);
+	form_hidden_input('find',$findnow);
+	form_hidden_input('showpage',$showpagenow);
+	form_hidden_input('action',$actionnow);
+	form_submit_button('commit',$actionhead.' '.TB_FILES,'edit');
+}
+?>
+</div></fieldset></div></div>
+</body>
+</html>

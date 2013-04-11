@@ -1,0 +1,7 @@
+<br>
+<p><span style="font-size:10pt;"><strong>Рассылка <span style="color:blue;">%ANNOUNCE_TYPE%</span> с сайта <a target="" title="" href="%SITE_URL%">%SITE_URL%</a></strong></span></p>
+<br>%DATA%<br>
+<p>-----------------------</p>
+<p>С уважением,<br>Администрация <a target="" title="" href="%SITE_URL%">%SITE_URL%</a></p>
+<p>E-Mail для контактов: <a target="" title="" href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p><strong><em><span style="color:red;">* Это сообщение сгенерированно и отправлено роботом. Отвечать на него не нужно.</span></em></strong></p>

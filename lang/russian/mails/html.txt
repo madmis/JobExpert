@@ -1,0 +1,14 @@
+<!-- .subscr_table {     width: 100%;     border: 0px; } .subscr_table td {     border: 1px solid #DDDDDD;     border-style: dotted;     font-size: 12px;     padding: 5px;     font-weight: bold; } --> 
+<table style="text-align: center;" border="0" width="100%">
+<tbody>
+<tr>
+<td style="background-color: #cc3333; color: #ffffff; font-weight: bold; font-style: italic; font-size: 28pt; text-align: left; padding: 5px 20px;">JobExpert</td>
+</tr>
+<tr>
+<td style="padding: 0px 20px; font-size: 12px; text-align: left;">%BODY%</td>
+</tr>
+<tr>
+<td style="background-color: #cc3333; color: #ffffff; font-weight: bold; font-size: 10pt; text-align: center;">© SD-Group 2010-2015</td>
+</tr>
+</tbody>
+</table>

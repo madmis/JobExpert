@@ -1,0 +1,8 @@
+<p>You received this message because today <strong>%DATE%</strong> This E-Mail address was provided when the user logs on our site.</p>
+<p>f you have not been registered and received this message in error, just ignore the letter.</p>
+<p>Account will be valid until<strong>%DELDATE%</strong>, after the expiry of this period the activation is not possible, your account will be deleted!</p>
+<p>Activation code: <strong><span style="color: red;">%CODE%</span></strong></p>
+<p>You can confirm the registration page: <a href="%ACTIVATE_PAGE%">%ACTIVATE_PAGE%</a></p>
+<p>Link for rapid activation: <a href="%ACTIVATE_LINK%">%ACTIVATE_LINK%</a></p>
+<p>If your mail client does not automatically open the page in a browser, copy link to clipboard.</p>
+<p><p>-----------------------</p><p>Yours sincerely,<br />Administration <a href="%SITE_URL%">%SITE_URL%</a></p><p>Contact E-Mail: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p><p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p></p>

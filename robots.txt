@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /caching/
+Disallow: /core/
+Disallow: /lang/
+Disallow: /templates/
+Disallow: /templates_c/
+Disallow: /updates/
+Disallow: /uploads/
+Disallow: /payments/
+Disallow: /new.pass/
+Disallow: /user.data/
+Disallow: /user.announces/
+Disallow: /user.news/
+Disallow: /user.articles/
+Allow: /

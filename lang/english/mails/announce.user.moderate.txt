@@ -1,0 +1,3 @@
+<p>Your ad: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong> sent to moderation.</p>
+<p><span style="color: #ff0000;"><strong>Note!</strong></span><br /><br /><span style="color: #ff0000;">At the moment the site is included moderation of new ads.</span><br /><span style="color: #ff0000;">Further work with your ad will be available after the verification and validation moderator.</span></p>
+<p><p>-----------------------</p><p>Yours sincerely,<br />Administration <a href="%SITE_URL%">%SITE_URL%</a></p><p>Contact E-Mail: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p><p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p></p>

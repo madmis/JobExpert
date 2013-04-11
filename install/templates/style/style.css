@@ -1,0 +1,182 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Sans-serif;
+	font-size: 12px;
+}
+
+
+/*** MISC ***/
+#cookieDisabled {
+	display: none;
+	color: red;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	width: 100%;
+}
+#noScript {
+	color: red;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	width: 100%;
+}
+.error {
+	color: red;
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+}
+.floatLeft {
+	float: left;
+}
+.floatRight {
+	float: right;
+}
+.center {
+	text-align: center;
+}
+.centerTable {
+	margin: 0 auto;
+}
+.red {
+	color: #FF0000;
+}
+.green {
+	color: #008000;
+}
+.tdPadding5 td{
+	padding: 5px 10px;
+}
+
+/*** BUTTONS ***/
+.nextButton {
+	text-decoration: none;
+	border: 1px solid #808080;
+	color: #FFFFFF;
+	background-color: #CC3333;
+	font-family: Verdana, Sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	padding: 5px;
+	cursor: pointer;
+}
+a.prevButton {
+	text-decoration: none;
+	border: 1px solid #808080;
+	color: #FFFFFF;
+	background-color: #CC3333;
+	font-family: Verdana, Sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	cursor: pointer;
+	padding: 5px;
+	margin: 50px;
+}
+.button {
+	text-decoration: none;
+	border: 1px solid #808080;
+	color: #FFFFFF;
+	background-color: #CC3333;
+	font-family: Verdana, Sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+
+
+/*** MAIN ***/
+.tHead {
+	width: 100%;
+	height: 170px;
+	background: url('../images/tbg.png') 0px 30px repeat-x;
+}
+.tLogo {
+	border: 0px;
+	padding-left: 40px;
+}
+.tText {
+	border: 0px;
+	padding-bottom: 40px;
+	padding-left: 30px;
+}
+.tLang {
+	border: 0px;
+	padding-left: 5px;
+	cursor: pointer;
+}
+.tCenter {
+	margin: 10px;
+}
+.tBottom {
+	width: 100%;
+	height: 80px;
+	background-color: #F1F1F1;
+	border-top: 1px solid #DDD;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+/*** LINKS ***/
+a.copy {
+	font-size: 10px;
+	text-decoration: none;
+	color: #CC3333;
+	font-weight: bold;
+}
+
+
+/*** STEP 1 ***/
+#agreement {
+	width: 80%;
+	height: 400px;
+	padding: 20px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	overflow: auto;
+	font-size: 12px;
+	margin: 20px auto 20px auto;
+	-moz-box-shadow: 0 0 10px #000000;
+	-webkit-box-shadow: 0 0 10px #000000;
+	overflow-x: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+}
+.form {
+	width: 80%;
+	margin: 20px auto;
+	padding-bottom: 50px;
+}
+
+/*** STEP 2 ***/
+.configTable td {
+	border: 1px solid #DDD;
+	padding: 10px;
+}
+
+.thead td{
+	text-align: center;
+	font-weight: bold;
+}
+
+#htaf {
+	margin: 0 auto;
+	padding: 20px;
+	display: none;
+	border: 2px solid #E27B14;
+	background-color: #FFFFCC;
+	width: 60%;
+	text-align: left;
+	font-size: 11px;
+	-moz-box-shadow: 0 0 10px #000000;
+	-webkit-box-shadow: 0 0 10px #000000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+}
+
+/*** STEP 3 ***/

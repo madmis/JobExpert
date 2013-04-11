@@ -1,0 +1,5 @@
+<p>You received this message because this E-Mail address provided when placing ads on the site <a title="%SITE_URL%" href="%SITE_URL%">%SITE_URL%</a></p>
+<p>Advertisement: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong></p>
+<p>Message System:</p><div style="border: 2px solid red; margin: 10px; padding: 10px; font-weight: bold;">Does your ad has expired %STATUS%-status.</div><p> </p>
+<p>If you do not advertise, please let us know at <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p><p>-----------------------</p><p>Yours sincerely,<br />Administration <a href="%SITE_URL%">%SITE_URL%</a></p><p>Contact E-Mail: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p><p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p></p>

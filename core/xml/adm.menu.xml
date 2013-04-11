@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<article id="config">
+		<title>MENU_CONFIG</title>
+		<ico>templates/admin/images/icons/config.png</ico>
+		<child id="smarty">
+			<title>MENU_CONFIG_SMARTY</title>
+			<link>?m=config&amp;s=tmpl</link>
+			<ico>templates/admin/images/icons/smarty.png</ico>
+		</child>
+		<child id="site">
+			<title>MENU_CONFIG_SITE</title>
+			<link>?m=config&amp;s=site</link>
+			<ico>templates/admin/images/icons/site.png</ico>
+		</child>
+		<child id="secure">
+			<title>MENU_CONFIG_SECURE</title>
+			<link>?m=config&amp;s=secure</link>
+			<ico>templates/admin/images/icons/secure.png</ico>
+		</child>
+		<child id="datetime">
+			<title>MENU_CONFIG_DATETIME</title>
+			<link>?m=config&amp;s=datetime</link>
+			<ico>templates/admin/images/icons/date_time.png</ico>
+		</child>
+		<child id="mail">
+			<title>MENU_CONFIG_MAIL</title>
+			<link>?m=config&amp;s=mail</link>
+			<ico>templates/admin/images/icons/mail.png</ico>
+		</child>
+		<child id="register">
+			<title>MENU_CONFIG_REGISTER</title>
+			<link>?m=config&amp;s=register</link>
+			<ico>templates/admin/images/icons/register.png</ico>
+		</child>
+		<child id="files">
+			<title>MENU_CONFIG_FILES</title>
+			<link>?m=config&amp;s=files</link>
+			<ico>templates/admin/images/icons/files.png</ico>
+		</child>
+		<child id="payment">
+			<title>MENU_CONFIG_PAYMENTS</title>
+			<link>?m=config&amp;s=payments</link>
+			<ico>templates/admin/images/icons/coins.png</ico>
+		</child>
+		<child id="rss">
+			<title>MENU_CONFIG_RSS</title>
+			<link>?m=config&amp;s=rss</link>
+			<ico>templates/admin/images/icons/rss.png</ico>
+		</child>
+		<child id="yvl">
+			<title>MENU_CONFIG_YVL</title>
+			<link>?m=config&amp;s=yvl</link>
+			<ico>templates/admin/images/icons/yandex.png</ico>
+		</child>
+	</article>
+	<article id="announces">
+		<title>MENU_ANNOUNCES</title>
+		<ico>templates/admin/images/icons/announces.png</ico>
+		<child id="announces_config">
+			<title>MENU_CONFIG</title>
+			<link>?m=announces&amp;s=common&amp;action=confCommon</link>
+			<ico>templates/admin/images/icons/config.png</ico>
+		</child>
+		<child>
+			<article id="vacancys">
+				<title>MENU_ANNOUNCES_VACANCYS</title>
+				<ico>templates/admin/images/icons/vacancys.png</ico>
+				<child id="vacancys_view">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=announces&amp;s=vacancys</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="vacancys_template">
+					<title>MENU_ACTION_TEMPLATE</title>
+					<link>?m=announces&amp;s=vacancys&amp;action=template</link>
+					<ico>templates/admin/images/icons/announces_template.png</ico>
+				</child>
+				<child id="vacancys_moderate">
+					<title>MENU_ACTION_MODERATE</title>
+					<link>?m=announces&amp;s=vacancys&amp;action=moderate</link>
+					<ico>templates/admin/images/icons/moderate.png</ico>
+				</child>
+				<child id="vacancys_payments">
+					<title>MENU_ACTION_PAYMENT</title>
+					<link>?m=announces&amp;s=vacancys&amp;action=payment</link>
+					<ico>templates/admin/images/icons/wait_payment.png</ico>
+				</child>
+				<child id="vacancys_new">
+					<title>MENU_ACTION_NEW</title>
+					<link>?m=announces&amp;s=vacancys&amp;action=new</link>
+					<ico>templates/admin/images/icons/activate.png</ico>
+				</child>
+				<child id="vacancys_correction">
+					<title>MENU_ACTION_CORRECTION</title>
+					<link>?m=announces&amp;s=vacancys&amp;action=correction</link>
+					<ico>templates/admin/images/icons/announces_correction.png</ico>
+				</child>
+				<child id="vacancys_archived">
+					<title>MENU_ACTION_ARCHIVED</title>
+					<link>?m=announces&amp;s=vacancys&amp;action=archived</link>
+					<ico>templates/admin/images/icons/announces_archived.png</ico>
+				</child>
+				<child id="vacancys_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=announces&amp;s=common&amp;action=confVacancy</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+				<child id="vacancys_quest_config">
+					<title>MENU_ANNOUNCES_CONFIG_QUESTIONARY</title>
+					<link>?m=announces&amp;s=common&amp;action=confQuestVacancy</link>
+					<ico>templates/admin/images/icons/questionary.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="resumes">
+				<title>MENU_ANNOUNCES_RESUMES</title>
+				<ico>templates/admin/images/icons/resumes.png</ico>
+				<child id="resumes_view">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=announces&amp;s=resumes</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="resumes_template">
+					<title>MENU_ACTION_TEMPLATE</title>
+					<link>?m=announces&amp;s=resumes&amp;action=template</link>
+					<ico>templates/admin/images/icons/announces_template.png</ico>
+				</child>
+				<child id="resumes_moderate">
+					<title>MENU_ACTION_MODERATE</title>
+					<link>?m=announces&amp;s=resumes&amp;action=moderate</link>
+					<ico>templates/admin/images/icons/moderate.png</ico>
+				</child>
+				<child id="resumes_payments">
+					<title>MENU_ACTION_PAYMENT</title>
+					<link>?m=announces&amp;s=resumes&amp;action=payment</link>
+					<ico>templates/admin/images/icons/wait_payment.png</ico>
+				</child>
+				<child id="resumes_new">
+					<title>MENU_ACTION_NEW</title>
+					<link>?m=announces&amp;s=resumes&amp;action=new</link>
+					<ico>templates/admin/images/icons/activate.png</ico>
+				</child>
+				<child id="resumes_correction">
+					<title>MENU_ACTION_CORRECTION</title>
+					<link>?m=announces&amp;s=resumes&amp;action=correction</link>
+					<ico>templates/admin/images/icons/announces_correction.png</ico>
+				</child>
+				<child id="resumes_archived">
+					<title>MENU_ACTION_ARCHIVED</title>
+					<link>?m=announces&amp;s=resumes&amp;action=archived</link>
+					<ico>templates/admin/images/icons/announces_archived.png</ico>
+				</child>
+				<child id="resumes_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=announces&amp;s=common&amp;action=confResume</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+				<child id="resumes_quest_config">
+					<title>MENU_ANNOUNCES_CONFIG_QUESTIONARY</title>
+					<link>?m=announces&amp;s=common&amp;action=confQuestResume</link>
+					<ico>templates/admin/images/icons/questionary.png</ico>
+				</child>
+			</article>
+		</child>
+	</article>
+	<article id="users">
+		<title>MENU_MANAGER_USERS</title>
+		<ico>templates/admin/images/icons/users.png</ico>
+		<child id="users_view">
+			<title>MENU_ACTION_VIEW</title>
+			<link>?m=users&amp;s=manager</link>
+			<ico>templates/admin/images/icons/view.png</ico>
+		</child>
+		<child id="users_add">
+			<title>MENU_ACTION_ADD</title>
+			<link>?m=users&amp;s=manager&amp;action=add</link>
+			<ico>templates/admin/images/icons/add.png</ico>
+		</child>
+		<child id="users_moderate">
+			<title>MENU_ACTION_MODERATE</title>
+			<link>?m=users&amp;s=manager&amp;action=moderate</link>
+			<ico>templates/admin/images/icons/moderate.png</ico>
+		</child>
+		<child id="users_activate">
+			<title>MENU_ACTION_NEW</title>
+			<link>?m=users&amp;s=manager&amp;action=activate</link>
+			<ico>templates/admin/images/icons/activate.png</ico>
+		</child>
+		<child id="users_payments">
+			<title>MENU_ACTION_PAYMENT</title>
+			<link>?m=users&amp;s=manager&amp;action=payment</link>
+			<ico>templates/admin/images/icons/wait_payment.png</ico>
+		</child>
+		<child id="users_filter">
+			<title>MENU_ACTION_FILTER</title>
+			<link>?m=users&amp;s=manager&amp;action=filter</link>
+			<ico>templates/admin/images/icons/filter.png</ico>
+		</child>
+		<child id="users_config">
+			<title>MENU_CONFIG</title>
+			<link>?m=users&amp;s=manager&amp;action=config</link>
+			<ico>templates/admin/images/icons/config.png</ico>
+		</child>
+		<child>
+			<article id="m_companies">
+				<title>MENU_COMPANIES</title>
+				<ico>templates/admin/images/icons/companies.png</ico>
+				<child id="m_companies_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=users&amp;s=companies</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="m_companies_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=users&amp;s=companies&amp;action=config</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+				<child id="m_companies_seo">
+					<title>MENU_SEO</title>
+					<link>?m=users&amp;s=companies&amp;action=seo</link>
+					<ico>templates/admin/images/icons/seo.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="m_agencies">
+				<title>MENU_AGENCIES</title>
+				<ico>templates/admin/images/icons/agency.png</ico>
+				<child id="m_agencies_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=users&amp;s=agencies</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="m_agencies_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=users&amp;s=agencies&amp;action=config</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+				<child id="m_agencies_seo">
+					<title>MENU_SEO</title>
+					<link>?m=users&amp;s=agencies&amp;action=seo</link>
+					<ico>templates/admin/images/icons/seo.png</ico>
+				</child>
+			</article>
+		</child>
+	</article>
+	<article id="manager">
+		<title>MENU_MANAGER</title>
+		<ico>templates/admin/images/icons/manager.png</ico>
+		<child>
+			<article id="doppages">
+				<title>MENU_MANAGER_DOP_PAGES</title>
+				<ico>templates/admin/images/icons/dop_pages.png</ico>
+				<child id="doppages_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=manager&amp;s=dop.pages</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="doppages_add">
+					<title>MENU_ACTION_ADD</title>
+					<link>?m=manager&amp;s=dop.pages&amp;action=add</link>
+					<ico>templates/admin/images/icons/add.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="news">
+				<title>MENU_MANAGER_NEWS</title>
+				<ico>templates/admin/images/icons/news.png</ico>
+				<child id="news_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=manager&amp;s=news</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="news_moderate">
+					<title>MENU_ACTION_MODERATE</title>
+					<link>?m=manager&amp;s=news&amp;action=moderate</link>
+					<ico>templates/admin/images/icons/moderate.png</ico>
+				</child>
+				<child id="news_correction">
+					<title>MENU_ACTION_CORRECTION</title>
+					<link>?m=manager&amp;s=news&amp;action=correction</link>
+					<ico>templates/admin/images/icons/announces_correction.png</ico>
+				</child>
+				<child id="news_archived">
+					<title>MENU_ACTION_ARCHIVED</title>
+					<link>?m=manager&amp;s=news&amp;action=archived</link>
+					<ico>templates/admin/images/icons/announces_archived.png</ico>
+				</child>
+				<child id="news_comments">
+					<title>MENU_COMMENTS</title>
+					<link>?m=manager&amp;s=news&amp;action=comments</link>
+					<ico>templates/admin/images/icons/comments.png</ico>
+				</child>
+				<child id="news_add">
+					<title>MENU_ACTION_ADD</title>
+					<link>?m=manager&amp;s=news&amp;action=add</link>
+					<ico>templates/admin/images/icons/add.png</ico>
+				</child>
+				<child id="news_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=manager&amp;s=news&amp;action=config</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="articles">
+				<title>MENU_MANAGER_ARTICLES</title>
+				<ico>templates/admin/images/icons/articles.png</ico>
+				<child id="articles_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=manager&amp;s=articles</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="articles_moderate">
+					<title>MENU_ACTION_MODERATE</title>
+					<link>?m=manager&amp;s=articles&amp;action=moderate</link>
+					<ico>templates/admin/images/icons/moderate.png</ico>
+				</child>
+				<child id="articles_correction">
+					<title>MENU_ACTION_CORRECTION</title>
+					<link>?m=manager&amp;s=articles&amp;action=correction</link>
+					<ico>templates/admin/images/icons/announces_correction.png</ico>
+				</child>
+				<child id="articles_archived">
+					<title>MENU_ACTION_ARCHIVED</title>
+					<link>?m=manager&amp;s=articles&amp;action=archived</link>
+					<ico>templates/admin/images/icons/announces_archived.png</ico>
+				</child>
+				<child id="articles_comments">
+					<title>MENU_COMMENTS</title>
+					<link>?m=manager&amp;s=articles&amp;action=comments</link>
+					<ico>templates/admin/images/icons/comments.png</ico>
+				</child>
+				<child id="articles_add">
+					<title>MENU_ACTION_ADD</title>
+					<link>?m=manager&amp;s=articles&amp;action=add</link>
+					<ico>templates/admin/images/icons/add.png</ico>
+				</child>
+				<child id="articles_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=manager&amp;s=articles&amp;action=config</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="filemanager">
+				<title>MENU_MANAGER_FILE</title>
+				<ico>templates/admin/images/icons/file_manager.png</ico>
+				<child id="filemanager_list">
+					<title>MENU_ACTION_DOWNLOAD</title>
+					<link>?m=manager&amp;s=file</link>
+					<ico>templates/admin/images/icons/add.png</ico>
+				</child>
+				<child id="filemanager_files">
+					<title>MENU_MANAGER_FILES</title>
+					<link>?m=manager&amp;s=file&amp;action=files</link>
+					<ico>templates/admin/images/icons/files.png</ico>
+				</child>
+				<child id="filemanager_images">
+					<title>MENU_MANAGER_IMAGES</title>
+					<link>?m=manager&amp;s=file&amp;action=images</link>
+					<ico>templates/admin/images/icons/images.png</ico>
+				</child>
+				<child id="filemanager_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=manager&amp;s=file&amp;action=config</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="mail_templates">
+				<title>MENU_MANAGER_MAIL_TEMPLATES</title>
+				<ico>templates/admin/images/icons/email_templates.png</ico>
+				<child id="mail_templates_general">
+					<title>MENU_MANAGER_MAIL_TEMPLATES_GENERAL</title>
+					<link>?m=manager&amp;s=mail.templates&amp;list=general</link>
+					<ico>templates/admin/images/icons/email.png</ico>
+				</child>
+				<child id="mail_templates_administrator">
+					<title>MENU_MANAGER_MAIL_TEMPLATES_ADMINISTRATOR</title>
+					<link>?m=manager&amp;s=mail.templates&amp;list=administrator</link>
+					<ico>templates/admin/images/icons/email_administrator.png</ico>
+				</child>
+				<child id="mail_templates_users">
+					<title>MENU_MANAGER_MAIL_TEMPLATES_USERS</title>
+					<link>?m=manager&amp;s=mail.templates&amp;list=users</link>
+					<ico>templates/admin/images/icons/email_users.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="groups">
+				<title>MENU_MANAGER_GROUPS</title>
+				<ico>templates/admin/images/icons/groups.png</ico>
+				<child id="groups_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=manager&amp;s=groups</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="groups_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=manager&amp;s=groups&amp;action=config</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="subscr">
+				<title>MENU_MANAGER_SUBSCRIPTIONS</title>
+				<ico>templates/admin/images/icons/subscr.png</ico>
+				<child id="subscr_view">
+					<title>MENU_USERS_SUBSCRIPTIONS</title>
+					<link>?m=manager&amp;s=subscriptions</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="subscr_payments">
+					<title>MENU_ACTION_PAYMENT</title>
+					<link>?m=manager&amp;s=subscriptions&amp;action=payment</link>
+					<ico>templates/admin/images/icons/wait_payment.png</ico>
+				</child>
+				<child id="subscr_announces">
+					<title>MENU_BY_ANNOUNCES</title>
+					<link>?m=manager&amp;s=subscriptions&amp;action=announce</link>
+					<ico>templates/admin/images/icons/announces.png</ico>
+				</child>
+				<child id="subscr_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=manager&amp;s=subscriptions&amp;action=config</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="mailer">
+				<title>MENU_MANAGER_MAILER</title>
+				<ico>templates/admin/images/icons/mailer.png</ico>
+				<child id="mailer_view">
+					<title>MENU_MANAGER_MAILER</title>
+					<link>?m=manager&amp;s=mailer</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="mailer_templates">
+					<title>MENU_ACTION_TEMPLATE</title>
+					<link>?m=manager&amp;s=mailer&amp;action=templates</link>
+					<ico>templates/admin/images/icons/templates.png</ico>
+				</child>
+
+<!--				
+				<child id="mailer_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=manager&amp;s=mailer&amp;action=config</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+-->
+			</article>
+		</child>
+
+	</article>
+	<article id="mods">
+		<title>MENU_MODS</title>
+		<ico>templates/admin/images/icons/mods.png</ico>
+		<child id="mods_mods">
+			<title>MENU_ACTION_VIEW</title>
+			<link>?m=mods&amp;s=mods</link>
+			<ico>templates/admin/images/icons/view.png</ico>
+		</child>
+		<child id="mods_payments">
+			<title>MENU_MODS_PAYMENTS</title>
+			<link>?m=mods&amp;s=payments</link>
+			<ico>templates/admin/images/icons/payments.png</ico>
+		</child>
+		<child id="mods_adsimple">
+			<title>MENU_MODS_ADSIMPLE</title>
+			<link>?m=mods&amp;s=adsimple</link>
+			<ico>templates/admin/images/icons/adsimple.png</ico>
+		</child>
+	</article>
+	<article id="dictionary">
+		<title>MENU_DICTIONARY</title>
+		<ico>templates/admin/images/icons/dictionary.png</ico>
+		<child id="regions">
+			<title>MENU_DICTIONARY_REGIONS</title>
+			<link>?m=dictionary&amp;s=regions</link>
+			<ico>templates/admin/images/icons/regions.png</ico>
+		</child>
+		<child id="sections">
+			<title>MENU_DICTIONARY_SECTIONS</title>
+			<link>?m=dictionary&amp;s=sections</link>
+			<ico>templates/admin/images/icons/sections.png</ico>
+		</child>
+		<child>
+			<article id="selects">
+				<title>MENU_DICTIONARY_SELECTS</title>
+				<ico>templates/admin/images/icons/selects.png</ico>
+				<child id="selects_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=dictionary&amp;s=selects</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="selects_add">
+					<title>MENU_ACTION_ADD</title>
+					<link>?m=dictionary&amp;s=selects&amp;action=add</link>
+					<ico>templates/admin/images/icons/add.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="articles_sections">
+				<title>MENU_DICTIONARY_ARTICLES_SECTIONS</title>
+				<ico>templates/admin/images/icons/sections.png</ico>
+				<child id="articles_sections_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=dictionary&amp;s=articles.sections</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="articles_sections_add">
+					<title>MENU_ACTION_ADD</title>
+					<link>?m=dictionary&amp;s=articles.sections&amp;action=add</link>
+					<ico>templates/admin/images/icons/add.png</ico>
+				</child>
+			</article>
+		</child>
+	</article>
+	<article id="service">
+		<title>MENU_SERVICE</title>
+		<ico>templates/admin/images/icons/service.png</ico>
+		<child>
+			<article id="administration">
+				<title>MENU_ADMINISTRATION</title>
+				<ico>templates/admin/images/icons/administration.png</ico>
+				<child id="maintenance">
+					<title>MENU_MAINTENANCE</title>
+					<link>?m=service&amp;s=administration&amp;action=maintenance</link>
+					<ico>templates/admin/images/icons/sitemaintaince.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="robot">
+				<title>MENU_ROBOT</title>
+				<ico>templates/admin/images/icons/robot.png</ico>
+				<child id="robot_config">
+					<title>MENU_CONFIG</title>
+					<link>?m=service&amp;s=robot&amp;action=config</link>
+					<ico>templates/admin/images/icons/config.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="languageManager">
+				<title>MENU_LANGUAGE_MANAGER</title>
+				<ico>templates/admin/images/icons/langManager.png</ico>
+				<child id="localizConst">
+					<title>MENU_LANGUAGE_LOCALIZ_CONST</title>
+					<link>?m=service&amp;s=language.manager&amp;action=localizConst</link>
+					<ico>templates/admin/images/icons/localizConst.png</ico>
+				</child>
+				<child id="localizText">
+					<title>MENU_LANGUAGE_LOCALIZ_TEXT</title>
+					<link>?m=service&amp;s=language.manager&amp;action=localizText</link>
+					<ico>templates/admin/images/icons/localizText.png</ico>
+				</child>
+				<child id="localizAgreement">
+					<title>MENU_LANGUAGE_LOCALIZ_AGREEMENT</title>
+					<link>?m=service&amp;s=language.manager&amp;action=localizAgreement</link>
+					<ico>templates/admin/images/icons/localizAgreement.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<title>MENU_MANAGER_TEMPLATES</title>
+			<ico>templates/admin/images/icons/managerTemplates.png</ico>
+			<link>?m=service&amp;s=manager.templates</link>
+		</child>
+		<child>
+			<title>MENU_DESIGNER</title>
+			<ico>templates/admin/images/icons/site_design.png</ico>
+			<link>?m=service&amp;s=designer</link>
+		</child>
+		<child>
+			<title>MENU_SERVICES</title>
+			<ico>templates/admin/images/icons/service.png</ico>
+			<link>?m=service&amp;s=service</link>
+		</child>
+	</article>
+	<article id="system">
+		<title>MENU_SYSTEM</title>
+		<ico>templates/admin/images/icons/system.png</ico>
+		<child>
+			<article id="system_updates">
+				<title>MENU_UPDATES</title>
+				<ico>templates/admin/images/icons/updates.png</ico>
+				<child id="system_updates_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=system&amp;s=updates</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+                <child id="system_updates_logs">
+                    <title>MENU_LOGS</title>
+                    <ico>templates/admin/images/icons/logs_sub.png</ico>
+                    <link>?m=system&amp;s=updates&amp;action=logs</link>
+                </child>
+			</article>
+		</child>
+		<child>
+			<article id="system_backups">
+				<title>MENU_BACKUPS</title>
+				<ico>templates/admin/images/icons/backups.png</ico>
+				<child id="system_backups_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=system&amp;s=backups</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<article id="system_import">
+				<title>MENU_SYSTEM_IMPORT</title>
+				<ico>templates/admin/images/icons/import.png</ico>
+				<child id="system_import_mds">
+					<title>MENU_SYSTEM_IMPORT_MDS</title>
+					<link>?m=system&amp;s=import&amp;action=mds</link>
+					<ico>templates/admin/images/icons/mds.png</ico>
+				</child>
+			</article>
+		</child>
+	</article>
+	<article id="logs">
+		<title>MENU_LOGS</title>
+		<ico>templates/admin/images/icons/logs.png</ico>
+		<child>
+			<title>MENU_LOGS_ADMIN_ACCESS</title>
+			<ico>templates/admin/images/icons/logs_sub.png</ico>
+			<link>?m=logs&amp;s=admin</link>
+		</child>
+		<child>
+			<title>MENU_LOGS_SQL</title>
+			<ico>templates/admin/images/icons/logs_sub.png</ico>
+			<link>?m=logs&amp;s=sql</link>
+		</child>
+		<child>
+			<article id="logs_payments">
+				<title>MENU_LOGS_PAYMENTS</title>
+				<ico>templates/admin/images/icons/logs_sub.png</ico>
+				<child id="logs_payments_list">
+					<title>MENU_ACTION_VIEW</title>
+					<link>?m=logs&amp;s=payments</link>
+					<ico>templates/admin/images/icons/view.png</ico>
+				</child>
+				<child id="logs_payments_files">
+					<title>MENU_LOGS_FILES</title>
+					<link>?m=logs&amp;s=payments&amp;action=files</link>
+					<ico>templates/admin/images/icons/files.png</ico>
+				</child>
+			</article>
+		</child>
+		<child>
+			<title>MENU_CONFIG</title>
+			<link>?m=logs&amp;s=config</link>
+			<ico>templates/admin/images/icons/config.png</ico>
+		</child>
+	</article>
+</root>

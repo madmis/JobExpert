@@ -1,0 +1,2 @@
+<p>На модерацию возвращено объявление, отредактированное пользователем: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong></p>
+<p>Управление объявлением доступно из панели администратора сайта: <a href="%ADMIN_PANEL_LINK%">%ADMIN_PANEL_LINK%</a></p>

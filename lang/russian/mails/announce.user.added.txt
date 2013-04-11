@@ -1,0 +1,8 @@
+<p>Вами, в каталоге нашего сайта, было размещено следующее объявление: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong></p>
+<p>Просмотр объявления: <a href="%ANNOUNCE_LINK%">%ANNOUNCE_LINK%</a></p>
+<p>Управление объявлением доступно из пользовательской панели: <a href="%USER_PANEL_LINK%">%USER_PANEL_LINK%</a></p>
+<p>Если Вы не размещали объявление, пожалуйста, сообщите нам об этом по адресу <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p>-----------------------</p>
+<p>С уважением,<br>Администрация <a target="" title="" href="%SITE_URL%">%SITE_URL%</a></p>
+<p>E-Mail для контактов: <a target="" title="" href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p>
+<p><strong><em><span style="color:red;">* Это сообщение сгенерированно и отправлено роботом. Отвечать на него не нужно.</span></em></strong></p>

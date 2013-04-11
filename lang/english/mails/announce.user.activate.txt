@@ -1,0 +1,9 @@
+<p>You received this message because <strong>%DATE%</strong> This E-Mail address specified when placing ads on the site <a title="%SITE_URL%" href="%SITE_URL%">%SITE_URL%</a></p>
+<p>Advertisement: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong></p>
+<p><strong>If you have not placed an ad and have received this message in error, just ignore the letter.</strong></p>
+<p>Activation will be valid until <strong>%DELDATE%</strong>, after the expiry of this period can not be activated, the ad will be removed!</p>
+<p>Activation code: <strong><span style="color: red;">%CODE%</span></strong></p>
+<p>You can confirm the placement on the page: <a title="Activation page ads" href="%ACTIVATE_PAGE%">%ACTIVATE_PAGE%</a></p>
+<p>Link for rapid activation: <a title="Fast ad activation" href="%ACTIVATE_LINK%">%ACTIVATE_LINK%</a></p>
+<p>If your mail client does not automatically open the page in a browser, copy link to clipboard.</p>
+<p><p>-----------------------</p><p>Yours sincerely,<br />Administration <a href="%SITE_URL%">%SITE_URL%</a></p><p>Contact E-Mail: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p><p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p></p>

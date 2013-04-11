@@ -1,0 +1,1 @@
+<img id="si" src="{$smarty.const.CONF_SCRIPT_URL}core/si/si.php?sid={$sid}" alt="error Captcha!">&nbsp;<img src="{$smarty.const.CONF_SCRIPT_URL}core/si/images/refresh.gif" title="{$smarty.const.FORM_CAPTCHA_REFRESH}" alt="{$smarty.const.FORM_CAPTCHA_REFRESH}" id="refresh_si" style="cursor: pointer; border: 0px;">

@@ -1,0 +1,17 @@
+<p style="text-align: left;"><strong>Pleased to welcome you, dear employers, on the demo site script JobExpert!</strong></p>
+<p style="text-align: left; padding-left: 30px;">Here you will find information on how to place their vacancies in the database engine script JobExpert.</p>
+<p style="text-align: left;"><strong>With us you can:</strong></p>
+<p style="text-align: left; padding-left: 30px;">Post job, filling in the form listed on the site, the number of ads to be added is not limited.</p>
+<p style="text-align: left;"><strong>For this you need:</strong></p>
+<p style="text-align: left; padding-left: 30px;">- if you do not pass the registration procedure to register on our site, select the user type "employer" and confirm the registration by activation of an e-mail address;</p>
+<p style="text-align: left; padding-left: 30px;">- log into your account using the username and password specified at registration and fill out an employer under "Add position".</p>
+<p style="text-align: left; padding-left: 30px;">Thus, your vacancy will occur on each request that you specify the parameters of advertisements.</p>
+<p style="text-align: left; padding-left: 30px;">After moderation, if it is disabled - then immediately, your ad will be available for viewing and searching on the site.</p>
+<p style="text-align: left; padding-left: 30px;"><em>recommend that you fill in the blanks in the organization of the office user - "About Us" and "Personal information" for a contact person, they will automatically be substituted in the questionnaire Job added with the ability to edit data fields.</em></p>
+<p style="text-align: left; padding-left: 30px;"><strong>Assign the property status of the VIP.</strong></p>
+<p style="text-align: left; padding-left: 60px;">If you want to have your jobs are listed on the first page in a special block of "VIP-Job", you can do this by using this service, your Jobs will automatically appear in the block of "VIP-vacancy" on the home page and will be displayed at the beginning of the search list c sorting by rating.</p>
+<p style="text-align: left; padding-left: 30px;"><strong>Assign the property status HOT.</strong></p>
+<p style="text-align: left; padding-left: 60px;">If you want to have your jobs are listed on the site in a special block of "HOT-Job", you can do this by using this service, Your Vacancy will automatically appear in the block "HOT-vacancy" on all pages.</p>
+<p style="text-align: left; padding-left: 30px;"><strong>Raise up ad - Rating.</strong></p>
+<p style="text-align: left; padding-left: 60px;">you put the job two weeks ago and she was not on the first page. A quick search for a skilled worker would like for you? Be in the forefront you can use this service, your vacancy will automatically rise up and will be displayed at the beginning of the search list c sorted by date and time of the order of the service.</p>
+<p style="text-align: center;"><em><strong>We recommend you to subscribe to receive fresh resumes on interesting careers.</strong></em></p>

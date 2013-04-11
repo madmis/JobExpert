@@ -1,0 +1,3 @@
+<p>В каталог добавлено новое объявление: <strong>%ANNOUNCE_TYPE% - %ANNOUNCE_TITLE%</strong></p>
+<p>Просмотр объявления: <a href="%ANNOUNCE_LINK%">%ANNOUNCE_LINK%</a></p>
+<p>Управление объявлением доступно из панели администратора сайта: <a href="%ADMIN_PANEL_LINK%">%ADMIN_PANEL_LINK%</a></p>

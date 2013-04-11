@@ -1,0 +1,1289 @@
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Документ, шаблон: index */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+body {
+	margin: 0; padding: 0;
+	font-family: Arial, Tahoma, Verdana, Sans-serif;
+	font-size: 12px;
+	background-color: #F5F6F6;
+}
+
+.shadow12 {
+	text-shadow: white 1px 2px 1px;
+}
+
+.shadow01 {
+	text-shadow: white 0px 1px 1px;
+}
+
+.shadow01red {
+	text-shadow: #EE0A00 0px 1px 1px;
+}
+
+div.clearLeft{
+	font-size:1px; height:1px; clear:left; border:none;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Верхний переключатель языков, маленькие кнопки навигации, шаблон: block.site.head */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+td.DesignTopLangButtons {
+	vertical-align: top;
+	text-align:right;
+	color:#413C3C;
+	font-size:11px;
+	height:25px;
+	padding-top: 10px;
+}
+
+td.DesignTopLangButtons div.ulLabel {
+	float:right;
+	padding:5px 2px 0px 0px;
+}
+
+td.DesignTopLangButtons ul {
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	float:right;
+	width:39px;
+	height:16px;
+	overflow:visible;
+	border-top:1px solid #DEDEDE;
+}
+
+td.DesignTopLangButtons li {
+	margin:0px;
+	padding:0px;
+	width:37px;
+	background-color: #F5F6F6;
+	border-left:1px solid #DEDEDE;
+	border-right:1px solid #DEDEDE;
+	text-align:left;
+	cursor: pointer;
+}
+td.DesignTopLangButtons li span {
+	display:block;
+	width:37px;
+	text-align:left;
+	background-image: url(../images/design/IconFlagDownArr.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	border-bottom:1px solid #DEDEDE;
+}
+td.DesignTopLangButtons li img {
+	width:22px;
+	height:16px;
+	padding:2px;
+}
+td.DesignTopLangButtons li.last {
+	border-bottom:1px solid #DEDEDE;
+}
+td.DesignTopLangButtons li.hidden {
+	display:none;
+}
+
+td.DesignTopNaviButtonDelimiter40 {
+	width:40px;
+}
+
+td.DesignTopNaviButtonDelimiter10 {
+	width:10px;
+}
+
+td.DesignTopNaviButtonHome,
+td.DesignTopNaviButtonMap,
+td.DesignTopNaviButtonContact {
+	vertical-align: top;
+	width:20px;
+	padding-top: 5px;
+}
+
+td.DesignTopNaviButtonHome a,
+td.DesignTopNaviButtonMap a,
+td.DesignTopNaviButtonContact a {
+	display:block;
+	background-repeat:no-repeat;
+	background-position: 50% 50%;
+	width:20px;
+	height:25px;
+}
+
+td.DesignTopNaviButtonHome a:hover,
+td.DesignTopNaviButtonMap a:hover,
+td.DesignTopNaviButtonContact a:hover {
+	background-color:#CC0000;
+}
+
+
+td.DesignTopNaviButtonHome a {
+	background-image:url(../images/design/IconHome.gif);
+}
+
+td.DesignTopNaviButtonHome a:hover {
+	background-image:url(../images/design/IconHomeHover.gif);
+}
+
+td.DesignTopNaviButtonMap a {
+	background-image:url(../images/design/IconMap.gif);
+}
+
+td.DesignTopNaviButtonMap a:hover {
+	background-image:url(../images/design/IconMapHover.gif);
+}
+
+td.DesignTopNaviButtonContact a {
+	background-image:url(../images/design/IconContact.gif);
+}
+
+td.DesignTopNaviButtonContact a:hover {
+	background-image:url(../images/design/IconContactHover.gif);
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Логотип, шаблон: block.site.head */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+td.DesignTopLogo { width: 390px; padding: 5px; padding-left:25px;}
+
+td.DesignTopLogo img {
+	height: 84px;
+	width: 375px;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Верхнее сабменю, шаблон: top.menu */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+ul.DesignTopSubMenu {
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	height: 41px;
+	background-image:url(../images/design/topMenuBg.png);
+	background-color:#CC0000;
+}
+
+ul.DesignTopSubMenu li {
+	float:left;
+}
+
+ul.DesignTopSubMenu li.delimiter {
+	width:10px;
+}
+
+ul.DesignTopSubMenu li a {
+	display:block;
+	float:left;
+	height:29px;		/* 41 - 12 */
+	padding: 12px 10px 0px 10px;
+	color:#F5F6F6;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.DesignTopSubMenu li a:hover {
+	color:#F5F6F6;
+	text-decoration:none; /* IE6 */
+	font-family:Tahoma; /* IE6 */
+	font-size:11px; /* IE6 */
+}
+
+ul.DesignTopSubMenu li.even {
+	background-image:url(../images/design/topMenuBgDark.png);
+}
+
+ul.DesignTopSubMenu li.odd {
+
+}
+
+ul.DesignTopSubMenu li.right {
+	float:right;
+}
+
+ul.DesignTopSubMenu li.odd a,
+ul.DesignTopSubMenu li.even a,
+ul.DesignTopSubMenu li.right a { /* IE6 */
+	color:#F5F6F6;
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:11px;
+}
+
+ul.DesignTopSubMenu li.odd a:hover,
+ul.DesignTopSubMenu li.even a:hover,
+ul.DesignTopSubMenu li.right a:hover { /* IE6 */
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:11px;
+}
+
+ul.DesignTopSubMenu li.even div.delimiter,
+ul.DesignTopSubMenu li.odd div.delimiter {
+	padding-left:1px;
+	float:left;
+	background-repeat:no-repeat;
+	height: 41px;
+}
+
+ul.DesignTopSubMenu li.even div.delimiter {
+	background-image: url(../images/design/topMenuDivDark.png);
+}
+
+ul.DesignTopSubMenu li.odd div.delimiter {
+	background-image: url(../images/design/topMenuDiv.png);
+}
+
+ul.DesignTopSubMenu li.even a.active {
+	cursor:default;
+	background-image: url(../images/design/topMenuMarkerDark.png);
+	background-repeat:no-repeat;
+	background-position: bottom center;
+}
+
+ul.DesignTopSubMenu li.odd a.active {
+	cursor:default;
+	background-image: url(../images/design/topMenuMarkerLight.png);
+	background-repeat:no-repeat;
+	background-position: bottom center;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Верхняя панель сабменю: Авторизация, шаблон: top.menu */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.DesignSubMenuPanelAuth {
+	height: 31px;
+	background-color: #413C3C;
+	border-bottom:1px solid black;
+	padding-left:10px;
+}
+
+div.DesignSubMenuPanelAuth,
+div.DesignSubMenuPanelAuth td,
+div.DesignSubMenuPanelAuth td a,
+div.DesignSubMenuPanelAuth td a:hover {
+	font-family:Tahoma;
+	font-size:11px;
+	color: #DDDDDD;
+}
+
+div.DesignSubMenuPanelAuth td a,
+div.DesignSubMenuPanelAuth td a:hover {
+	text-decoration:underline;
+}
+
+
+div.DesignSubMenuPanelAuth form {
+	display:inline;
+}
+
+div.DesignSubMenuPanelAuth th {
+	text-align:left;
+}
+
+div.DesignSubMenuPanelAuth input.text {
+	border:1px solid #2C2828;
+	font-size:11px;
+	font-family:Verdana;
+	height:12px;
+}
+
+div.DesignSubMenuPanelAuth div.submitButtonDark {
+	background-image: url(../images/design/topMenuEnterButton.png);
+	background-repeat:no-repeat;
+	vertical-align:top;
+	width:55px;
+	height:22px;
+	text-align:center;
+	cursor:pointer;
+}
+
+div.DesignSubMenuPanelAuth div.submitButtonDark input {
+	background-image: url(../images/design/submitButtonsBgTop.png);
+	background-repeat:repeat-x;
+	background-position:0 -4px;
+	background-color:#C50C00;
+	padding-top:2px;
+	border:none;
+	font-size:11px;
+	font-weight:bold;
+	font-family:Tahoma;
+	color:#413C3C;
+	width:45px;
+	margin:1px auto 0 auto;
+	cursor:pointer;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Левый сайдбар, шаблон: index.tpl */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+td.DesignSideBarLeft { width:240px; }
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Правый сайдбар, шаблон: index.tpl */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+td.DesignSideBarRight { width:240px; }
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Блоки сайдбара, шаблоны: block.authorize, block.menu, block.additional.menu.tpl, block.statistics.tpl  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.DesignLeftSideBarBlockWrapper {
+	width:223px;
+	background-image: url(../images/design/SideBarMenu.png);
+	background-repeat:no-repeat;
+	background-position: bottom left;
+	padding:0px 9px 30px 6px;
+}
+
+div.DesignLeftSideBarBlockWrapperB {
+	width:240px;
+	background-image: url(../images/design/SideBarMenuB.png);
+	background-repeat:no-repeat;
+	background-position: bottom left;
+	padding:0px 9px 30px 6px;
+}
+
+div.DesignLeftSideBarBlockWrapper div.ContentWrapper,
+div.DesignLeftSideBarBlockWrapperB div.ContentWrapper {
+	padding:0px 10px 0px 10px;
+}
+
+div.DesignLeftSideBarBlockWrapper h3,
+div.DesignLeftSideBarBlockWrapperB h3 {
+	background-image: url(../images/design/sideBarHeaderDot.gif);
+	background-repeat:no-repeat;
+	background-position: center left;
+	padding-left:10px;
+	color: #CC0000;
+	font-family:Tahoma;
+	font-size:13px;
+	margin-top:10px;
+	text-shadow: white 0px 1px 1px;
+}
+
+div.DesignLeftSideBarBlockWrapper ul,
+div.DesignLeftSideBarBlockWrapperB ul {
+	margin:0px;
+	padding:0px;
+	list-style: none;
+}
+
+div.DesignLeftSideBarBlockWrapper ul li,
+div.DesignLeftSideBarBlockWrapperB ul li {
+	height:20px;
+}
+
+div.DesignLeftSideBarBlockWrapper ul li.even,
+div.DesignLeftSideBarBlockWrapperB ul li.even {
+	background-color:#EBEBEB;
+}
+
+div.DesignLeftSideBarBlockWrapper ul li.odd,
+div.DesignLeftSideBarBlockWrapperB ul li.odd {
+/*	background-color:#F8F8F8; */
+}
+
+div.DesignLeftSideBarBlockWrapper ul li a,
+div.DesignLeftSideBarBlockWrapper ul li div,
+div.DesignLeftSideBarBlockWrapperB ul li a,
+div.DesignLeftSideBarBlockWrapperB ul li div {
+	display:block;
+	height:17px;
+	padding-top:3px;
+	padding-left: 20px;
+	background-image:url(../images/design/sideBarMenuDot.gif);
+	background-repeat:no-repeat;
+	background-position: 10px center;
+	text-shadow: white 0px 1px 1px;
+	color:#666666;
+	text-decoration:none;
+}
+
+div.DesignLeftSideBarBlockWrapper ul li a.withIcon,
+div.DesignLeftSideBarBlockWrapper ul li div.withIcon,
+div.DesignLeftSideBarBlockWrapperB ul li a.withIcon,
+div.DesignLeftSideBarBlockWrapperB ul li div.withIcon {
+	width:165px;
+	float:left;
+}
+
+
+div.DesignLeftSideBarBlockWrapper ul li a.icon,
+div.DesignLeftSideBarBlockWrapper ul li div.icon,
+div.DesignLeftSideBarBlockWrapperB ul li a.icon,
+div.DesignLeftSideBarBlockWrapperB ul li div.icon {
+	width:15px;
+	float:right;
+	background-image:none;
+	margin:0px;
+	padding-left:0px;
+	padding-right:4px;
+}
+
+div.DesignLeftSideBarBlockWrapper ul li div.icon img,
+div.DesignLeftSideBarBlockWrapperB ul li div.icon img {
+	width:13px;
+	height:13px;
+}
+
+div.DesignLeftSideBarBlockWrapper ul li.even a,
+div.DesignLeftSideBarBlockWrapper ul li.odd a,
+div.DesignLeftSideBarBlockWrapper ul li a.withIcon,
+div.DesignLeftSideBarBlockWrapperB ul li.even a,
+div.DesignLeftSideBarBlockWrapperB ul li.odd a,
+div.DesignLeftSideBarBlockWrapperB ul li a.withIcon {
+	color:#666666;
+}
+
+div.DesignLeftSideBarBlockWrapper ul li a:hover,
+div.DesignLeftSideBarBlockWrapper ul li.even a:hover,
+div.DesignLeftSideBarBlockWrapper ul li.odd a:hover,
+div.DesignLeftSideBarBlockWrapper ul li a.withIcon:hover,
+div.DesignLeftSideBarBlockWrapperB ul li a:hover,
+div.DesignLeftSideBarBlockWrapperB ul li.even a:hover,
+div.DesignLeftSideBarBlockWrapperB ul li.odd a:hover,
+div.DesignLeftSideBarBlockWrapperB ul li a.withIcon:hover {
+	color:#CC0000;
+	text-decoration:none;
+}
+
+div.enterButtonLight {
+	background-image: url(../images/design/sideBarEnterButton.png);
+	background-repeat:no-repeat;
+	vertical-align:top;
+	width:55px;
+	height:22px;
+	text-align:center;
+	cursor:pointer;
+}
+
+div.enterButtonLight input {
+	background-image: url(../images/design/submitButtonsBg.png);
+	background-repeat:repeat-x;
+	background-position:0 -5px;
+	background-color:#C50C00;
+	padding-top:1px;
+	border:none;
+	font-size:11px;
+	font-weight:bold;
+	font-family:Tahoma;
+	color:#F5F6F6;
+	margin:2px auto 0 auto;
+	width:45px;
+	cursor:pointer;
+}
+
+div.DesignLeftSideBarBlockWrapper div.submitButtonLight,
+div.DesignLeftSideBarBlockWrapperB div.submitButtonLight {
+	background-image: url(../images/design/sideBarEnterButton.png);
+	background-repeat:no-repeat;
+	vertical-align:top;
+	width:55px;
+	height:22px;
+	text-align:center;
+	cursor:pointer;
+}
+
+div.DesignLeftSideBarBlockWrapper div.submitButtonLight input,
+div.DesignLeftSideBarBlockWrapperB div.submitButtonLight input {
+	background-image: url(../images/design/submitButtonsBg.png);
+	background-repeat:repeat-x;
+	background-position:0 -5px;
+	background-color:#C50C00;
+	padding-top:1px;
+	border:none;
+	font-size:11px;
+	font-weight:bold;
+	font-family:Tahoma;
+	color:#F5F6F6;
+	margin:2px auto 0 auto;
+	width:45px;
+	cursor:pointer;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Блоки сайдбара, шаблон:  block.statistics  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.DesignLeftSideBarBlockWrapper table.statistics th,
+div.DesignLeftSideBarBlockWrapperB table.statistics th {
+	font-weight:normal;
+	text-align:left;
+	width:150px;
+}
+
+div.DesignLeftSideBarBlockWrapper table.statistics td,
+div.DesignLeftSideBarBlockWrapperB table.statistics td {
+	color: #CC0000;
+	font-family:Tahoma;
+	font-size:11px;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Блоки сайдбара, шаблон:  block.last.news  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.DesignLeftSideBarBlockWrapper h3.NewsH3,
+div.DesignLeftSideBarBlockWrapperB h3.NewsH3 {
+	margin-bottom:0px;
+}
+
+div.DesignLeftSideBarBlockWrapper div.newsBlock,
+div.DesignLeftSideBarBlockWrapper div.newsBlockLast,
+div.DesignCenterSideBarBlockWrapper div.newsBlock,
+div.DesignCenterSideBarBlockWrapper div.newsBlockLast,
+div.DesignLeftSideBarBlockWrapperB div.newsBlock,
+div.DesignLeftSideBarBlockWrapperB div.newsBlockLast {
+	display:block;
+	float: none;
+	margin-left:8px;
+	padding: 10px 10px 10px 20px;
+	border-bottom: 1px solid #DEDEDE;
+	border-top: 1px solid #white;
+	background-image:url(../images/design/sideBarMenuNewsDot.gif);
+	background-repeat:no-repeat;
+	background-position: 5px 13px;
+	font-size: 11px;
+	text-align: left;
+	text-shadow: white 0px 1px 1px;
+}
+
+div.DesignLeftSideBarBlockWrapper div.newsBlockLast,
+div.DesignCenterSideBarBlockWrapper div.newsBlockLast,
+div.DesignLeftSideBarBlockWrapperB div.newsBlockLast {
+	border-bottom: none;
+}
+
+div.DesignLeftSideBarBlockWrapper div.newsDate,
+div.DesignLeftSideBarBlockWrapperB div.newsDate {
+	margin-top:5px;
+	background-color:#EBEBEB;
+	text-align:right;
+}
+div.DesignCenterSideBarBlockWrapper div.newsDate {
+	float:right;
+}
+
+div.DesignLeftSideBarBlockWrapper div.newsBlock a,
+div.DesignLeftSideBarBlockWrapper div.newsBlockLast a,
+div.DesignLeftSideBarBlockWrapperB div.newsBlock a,
+div.DesignLeftSideBarBlockWrapperB div.newsBlockLast a {
+	color:#666666;
+}
+
+div.DesignLeftSideBarBlockWrapper div.newsBlock a:hover,
+div.DesignLeftSideBarBlockWrapper div.newsBlockLast a:hover,
+div.DesignLeftSideBarBlockWrapperB div.newsBlock a:hover,
+div.DesignLeftSideBarBlockWrapperB div.newsBlockLast a:hover {
+	color:#CC0000;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Блоки сайдбара, шаблон:  block.who.online  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.DesignLeftSideBarBlockWrapper table.whoonline th,
+div.DesignLeftSideBarBlockWrapperB table.whoonline th {
+	font-weight:normal;
+	text-align:left;
+	width:150px;
+}
+
+div.DesignLeftSideBarBlockWrapper table.whoonline td,
+div.DesignLeftSideBarBlockWrapperB table.whoonline td {
+	color: #CC0000;
+	font-family:Tahoma;
+	font-size:11px;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Блоки сайдбара, шаблон:  block.vacancy.list, block.resume.list  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.DesignLeftSideBarBlockWrapper ul li.CategoriesLists,
+div.DesignLeftSideBarBlockWrapperB ul li.CategoriesLists {
+	height:auto;
+}
+
+div.DesignLeftSideBarBlockWrapper ul li.CategoriesLists table,
+div.DesignLeftSideBarBlockWrapperB ul li.CategoriesLists table {
+	font-size:10px;
+	margin: 2px 2px 2px 10px;
+}
+
+div.DesignLeftSideBarBlockWrapper ul li.CategoriesLists table td.counter,
+div.DesignLeftSideBarBlockWrapperB ul li.CategoriesLists table td.counter {
+	color:#666666;
+}
+
+div.DesignLeftSideBarBlockWrapper ul li.CategoriesLists a,
+div.DesignLeftSideBarBlockWrapperB ul li.CategoriesLists a {
+	display:inline;
+	background-image: none;
+	padding:0px;
+	margin:0px;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Центральная часть страницы, шаблон:  index  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+h1.DesignPageHeader {
+	font-size:11px;
+	font-family:Tahoma;
+	text-align:left;
+	margin-top:20px;
+	color:#4D4D4D;
+	text-shadow: white 1px 2px 1px;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Центральная часть страницы, шаблон:  main  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.DesignMainPageBody {
+	font-size:12px;
+	font-family:Arial;
+	color:#666666;
+	text-align:left;
+}
+
+div.DesignMainPageBody strong {color:#4D4D4D;}
+div.DesignMainPageBody strong.titleJob {color:#CC0000;}
+div.DesignMainPageBody strong.titleExpert {color:#4D4D4D;}
+div.DesignMainPageBody strong.Header {color:#4D4D4D; font-size:12px;}
+
+div.DesignMainPageBody table.mainBodyTable {
+	width:100%;
+	margin:5px;
+	background-image:url(../images/design/mainBodyTableBG.png);
+/*	background-repeat:repeat-x; */
+	background-position:top;
+	font-size:11px;
+	font-family:Tahoma;
+}
+
+div.DesignMainPageBody table.mainBodyTable th {
+	background-color:#413C3C;
+	color:white;
+	padding:5px 5px 5px 10px;
+	border-left:1px solid #2C2828;
+	border-right:1px solid #625A5A;
+	text-align:left;
+}
+div.DesignMainPageBody table.mainBodyTable th a.light {
+	color:white;
+}
+
+
+div.DesignMainPageBody table.mainBodyTable td, /* Shadow in vacancy/resume view */
+div.DesignMainPageBody table.mainBodyTable td.VRDescr,
+div.DesignMainPageBody table.mainBodyTable td.VRIcon {
+	padding:2px;
+	border-left:1px solid #DEDEDE;
+	border-right:1px solid white;
+	border-top:1px solid white;
+	border-bottom:1px solid #DEDEDE;
+	text-align:center;
+	text-shadow: white 0px 1px 1px;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.padding10 {
+    padding: 10px;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.AlignLeft {
+	text-align:left;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.AlignCenter {
+	text-align:center;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.AlignRight {
+	text-align:right;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.noBorderRight {
+	border-right:none;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.noBorderLeft {
+	border-left:none;
+}
+
+div.DesignMainPageBody table.mainBodyTable tr.noBorderTop td {
+	border-top:none;
+}
+
+div.DesignMainPageBody table.mainBodyTable tr.noBorderBottom td {
+	border-bottom:none;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.last {
+	border-right:1px solid #DEDEDE;
+}
+
+div.DesignMainPageBody table.mainBodyTable td a {
+	font-weight:normal;
+	text-decoration:underline;
+}
+
+div.DesignMainPageBody table.mainBodyTable td a:hover {
+	color:#CC0000;
+	font-weight:normal;
+	text-decoration:underline;
+}
+
+div.DesignMainPageBody table.mainBodyTable td div.DesignCenterSideBarBlockWrapper div.newsBlock a,
+div.DesignMainPageBody table.mainBodyTable td div.DesignCenterSideBarBlockWrapper div.newsBlockLast a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div.DesignMainPageBody table.mainBodyTable td div.DesignCenterSideBarBlockWrapper div.newsBlock a:hover,
+div.DesignMainPageBody table.mainBodyTable td div.DesignCenterSideBarBlockWrapper div.newsBlockLast a:hover {
+	text-decoration: underline;
+}
+
+div.DesignMainPageBody table.mainBodyTable tr.test {
+	cursor:pointer;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.VRDescr {
+	text-align:left;
+	padding-left:5px;
+	border-left:none;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.VRIcon {
+	width:30px;
+	border-right:none;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.VRSallary {
+	width:100px;
+}
+
+div.DesignMainPageBody table.mainBodyTable td.VRDate {
+	width:100px;
+}
+
+div.DesignMainPageBody table.mainBodyTable table,
+div.DesignMainPageBody table.mainBodyTable table tr,
+div.DesignMainPageBody table.mainBodyTable table td {
+	border:0px;
+	text-align:left;
+	text-shadow: none;
+}
+
+
+
+div.DesignMainPageBody div.AttentionWrapper {
+	border:1px solid #E1DFD6;
+	margin-left:5px;
+	margin-right:-5px;
+}
+
+div.DesignMainPageBody div.Attention {
+	color:#666666;
+	background-color:#FEFCF3;
+	background-image:url(../images/design/mainBodyAttention.png);
+	background-repeat:no-repeat;
+	background-position: 2px center;
+	padding:10px 10px 10px 55px;
+	text-align:left;
+	border:1px solid white;
+
+}
+
+div.DesignMainPageBody div.resumeLeft {
+	margin:5px 10px 5px 10px;
+	float:left;
+	width:320px;
+	font-size:11px;
+	font-family:Tahoma;
+}
+
+div.DesignMainPageBody div.vacancyRight {
+	margin: 5px 10px 5px 10px;
+	float:right;
+	width:320px;
+	font-size:11px;
+	font-family:Tahoma;
+	text-align:right;
+}
+
+div.DesignMainPageBody div.AlignRight a {
+	float:right;
+	width:150px;
+	font-size:11px;
+	font-family:Tahoma;
+	text-align:right;
+}
+
+div.DesignMainPageBody div.AlignRight a {
+	color:#CC0000;
+	text-decoration:underline;
+}
+
+div.DesignMainPageBody .paddingText5 {
+    margin: 10px;
+}
+
+div.DesignMainPageBody .paddingTextLeft5 {
+	margin-left: 10px;
+}
+
+div.DesignMainPageBody .paddingTextBoth5 {
+	margin: 0px 10px;
+}
+
+div.DesignMainPageBody .paddingTextBoth55 {
+	margin: 5px 10px;
+}
+
+div.DesignMainPageBody .paddingTextWBottom5 {
+	margin: 10px 10px 0px 10px;
+}
+
+div.DesignMainPageBody .paddingTextWTop5 {
+	margin: 0px 10px 10px 10px;
+}
+
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Футер, шаблон:  block.site.foot  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.DesignFooterHR {
+	background-image:url(../images/design/footerHR.png);
+	background-repeat:repeat-x;
+	height:4px;
+	font-size:4px;
+}
+
+table.DesignFooterTable {
+	margin: 5px 0px 5px 0px;
+}
+
+table.DesignFooterTable td {
+	padding: 0px 15px;
+	color:#797878;
+	font-size:11px;
+	text-shadow: white 1px 2px 1px;
+}
+
+table.DesignFooterTable td a {
+	color:#797878;
+	text-decoration:underline;
+}
+
+table.DesignFooterTable td a:hover {
+	color:#797878;
+	text-decoration:underline;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Центральный блок, добавление резюме:  resume.add  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.Design_panesBGWrapper {
+	border:1px solid #CCCCCC;
+	margin:0px;padding:0px;
+}
+
+div.Design_panesBG {
+	margin:0px;padding:0px;
+	background-image:url(../images/design/mainBodyPanesBg.png);
+	background-position:top;
+	background-repeat:repeat-x;
+	background-color:white;
+	border:1px solid white;
+}
+
+div.Design_panesBG ul.Design_tabs {
+	text-align:left;
+	list-style:none;
+	background-image:url(../images/design/mainBodyTabsUl.gif);
+	background-repeat:repeat-x;
+	height: 28px;
+	margin:-2px -2px 0px -2px;
+	padding:0px;
+}
+
+div.Design_panesBG ul.Design_tabs li {
+	float:left;
+	height: 28px;
+}
+
+div.Design_panesBG ul.Design_tabs  a,
+div.Design_panesBG ul.Design_tabs li a:hover {
+	padding:4px 10px 0px 10px;
+	height:26px;
+	float:left;
+	display:block;
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+div.Design_panesBG ul.Design_tabs a.current {
+	background-image:url(../images/design/mainBodyTabsUlArrDn.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+div.Design_panesBG ul.Design_tabs li.delim div {
+	float:left;
+	height:22px;
+	border-right:1px solid #FF0000;
+	border-left:1px solid #990000;
+}
+
+
+
+div.Design_panesBG div.Design_panes {
+	text-align:left;
+	font-family:Tahoma;
+	font-size:10px;
+	color:#666666;
+}
+
+
+div.Design_panesBG div.Design_panes h3 {
+	font-size:11px;
+	margin:10px;
+	font-family:Tahoma;
+	font-size:11px;
+	color:#4D4D4D;
+}
+
+
+hr.Design_panesDelimiter {
+	height:1px;
+	border:none;
+	color: #CCCCCC;
+	background-color: #CCCCCC;
+}
+
+table.Design_panesFormTable {
+	margin:0px 20px;
+	width:650px;
+	table-layout: fixed;
+}
+
+table.Design_panesFormTable td.namecolspan {
+	font-weight:bold;
+	color:#4D4D4D;
+}
+
+table.Design_panesFormTable td.name {
+	font-weight:bold;
+	color:#4D4D4D;
+	width:125px;
+}
+
+table.Design_panesFormTable td.name175 {
+	font-weight:bold;
+	color:#4D4D4D;
+	width:175px;
+}
+
+table.Design_panesFormTable td.name300 {
+	font-weight:bold;
+	color:#4D4D4D;
+	width:300px;
+}
+
+
+table.Design_panesFormTable .error {
+	width:16px;
+}
+
+table.Design_panesFormTable .error img {
+	border:none;
+	cursor:help;
+	vertical-align:middle;
+}
+
+
+table.Design_panesFormTable #add_phones {
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	vertical-align:top;
+}
+
+div.DesignDivExt {
+	background-image:url(../images/design/mainBodyPanesBg.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	width: 650px;
+	margin-left:23px;
+	padding:10px;
+	border:1px solid silver;
+
+}
+
+div.DesignDivExt table.Design_panesFormTable {
+	margin:0px;
+}
+
+
+div.Design_panesBG div.Design_panes div a.naviRight,
+div.Design_panesBG div.Design_panes div a.naviRight:hover {
+	display: block;
+	float: right;
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration:none;
+	color:#CC0000;
+	margin-right:10px;
+}
+
+div.Design_panesBG div.Design_panes div a.naviLeft,
+div.Design_panesBG div.Design_panes div a.naviLeft:hover {
+	display: block;
+	float: left;
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration:none;
+	color:#CC0000;
+	margin-left:10px;
+}
+
+
+div.Design_panesBG div.Design_panes div a.naviLeftInActive,
+div.Design_panesBG div.Design_panes div a.naviLeftInActive:hover {
+	cursor: default;
+	display: block;
+	float: left;
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration:none;
+	color:#999;
+	margin-left:10px;
+}
+
+div.Design_panesBG div.Design_panes div.submitButtonLight {
+	background-image: url(../images/design/sendButt.png);
+	background-repeat:no-repeat;
+	vertical-align:top;
+	width:110px;
+	height:22px;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+
+div.Design_panesBG div.Design_panes div.submitButtonLight input {
+	background-image: url(../images/design/submitButtonsBg.png);
+	background-repeat:repeat-x;
+	background-position:0 -4px;
+	background-color:#C50C00;
+	padding-top:1px;
+	border:none;
+	font-size:11px;
+	font-weight:bold;
+	font-family:Tahoma;
+	color:#F5F6F6;
+	width:100px;
+	margin-top:1px;
+	cursor:pointer;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Центральный блок, блок ошибок:  errors.message  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.ErrorBlockWrapper {
+	width: 400px;
+	background-image: url(../images/design/mainBodyTableBG.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	font-family:Tahoma;
+	font-size:11px;
+	text-align:left;
+	margin:20px 0px;
+}
+div.ErrorBlockWrapper div.ErrorHeader {
+	border-bottom:1px solid #890000;
+	background-color: #CC0000;
+	color: #F9F8F8;
+	font-weight:bold;
+	padding:5px 5px 5px 10px;
+}
+div.ErrorBlockWrapper div.ErrorBlock {
+	background-image: url(../images/error_logo.png);
+	background-repeat:no-repeat;
+	background-position:10px center;
+	border-left: 1px solid #DEDEDE;
+	border-right: 1px solid #DEDEDE;
+	border-bottom: 1px solid #DEDEDE;
+}
+
+div.ErrorBlockWrapper div.ErrorBlock ul {
+	border: 1px solid white;
+	margin:0px;
+	padding:15px 10px 10px 70px;
+}
+
+div.ErrorBlockWrapper div.ErrorBlock ul li {
+	margin-bottom:5px;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Информационный блок, любой шаблон  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+div.InfoBlockWrapper {
+	background-image: url(../images/design/mainBodyTableBG.png);
+/*	background-repeat:repeat-x; */
+	background-position:top;
+	font-family:Tahoma;
+	font-size:11px;
+	text-align:left;
+	margin:0px;
+}
+div.InfoBlockWrapper div.withoutHeader {
+	border-bottom: 1px solid #DEDEDE;
+}
+div.InfoBlockWrapper div.InfoHeader {
+	border-bottom:1px solid #890000;
+	background-color: #CC0000;
+	color: #F9F8F8;
+	font-weight:bold;
+	padding:5px 5px 5px 10px;
+}
+div.InfoBlockWrapper div.InfoBlock {
+	border-left: 1px solid #DEDEDE;
+	border-right: 1px solid #DEDEDE;
+	border-bottom: 1px solid #DEDEDE;
+}
+
+div.InfoBlockWrapper div.InfoBlock div {
+	border: 1px solid white;
+	margin:0px;
+	padding:10px;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Центральный блок, блок просмотра резюме:  resume.view.short  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+
+div.DesignMainPageBody div.submitButtonLight {
+	background-image: url(../images/design/sendButt.png);
+	background-repeat:no-repeat;
+	vertical-align:top;
+	width:110px;
+	height:22px;
+	text-align:center;
+	cursor:pointer;
+}
+
+div.DesignMainPageBody div.submitButtonLight input {
+	background-image: url(../images/design/submitButtonsBg.png);
+	background-repeat:repeat-x;
+	background-position:0 -6px;
+	background-color:#C50C00;
+	padding-top:1px;
+	border:none;
+	font-size:11px;
+	font-weight:bold;
+	font-family:Tahoma;
+	color:#F5F6F6;
+	margin:2px auto 0 auto;
+	cursor:pointer;
+}
+
+
+div.DesignMainPageBody div.submitButtonLight a.submitButton,
+div.DesignMainPageBody div.submitButtonLight a.submitButton:hover {
+	background:transparent;
+	text-decoration:none;
+	font-size:11px;
+	font-weight:bold;
+	font-family:Tahoma;
+	color:#F5F6F6;
+	width:100px;
+	display:block;
+	padding-top:3px;
+	text-align:center;
+	cursor:pointer;
+	text-shadow: none;
+}
+
+div.DesignMainPageBody table.mainBodyTable .VRTitle a,
+div.DesignMainPageBody table.mainBodyTable .VRTitle a:hover {
+	font-weight:bold;
+	color:#413C3C;
+	text-decoration:none;
+}
+
+div.DesignMainPageBody table.mainBodyTable th.VRRegion {
+	width: 100px;
+}
+
+div.DesignMainPageBody table.mainBodyTable th.VRDate {
+	width: 70px;
+}
+
+div.DesignMainPageBody table.mainBodyTable th.VRPayFrom {
+	width: 100px;
+}
+
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+/* Центральный блок, блок просмотра личных данных:  user.data  */
+/*  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+td.DesignUserDataTopData {
+	padding:10px 4px 4px 8px;
+	font-size:11px;
+	color:#4D4D4D;
+	text-align:left;
+}
+
+td.DesignUserDataTopDataCellDelim {
+	background-image: url(../images/design/DesignUserDataTopDataCellDe.png);
+	background-repeat:repeat-y;
+	text-align:left;
+}
+
+td.DesignUserDataTopData table.DesignSMainData {
+	width:100%;
+	margin: 10px;
+}
+td.DesignUserDataTopData table.DesignSMainData td.MDheader {
+	width:50%;
+	padding:5px;
+}
+td.DesignUserDataTopData table.DesignSMainData td.MDdata {
+	width:50%;
+	color:#CC0000;
+	padding:5px;	
+	font-weight:bold;
+}
+
+.freesubscribe {
+	background-image: url(../images/design/freesubscribe.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+	text-align:left;
+	padding:7px 0px 7px 40px;
+	margin:15px 5px 0px 5px;
+	font-size:11px; color:#666;
+
+}
+
+.freesubscribe strong { color:#CC0000; }
+
+table.extSearchFieldTable tr td strong { display:block; margin-bottom:5px; }
+table.extSearchFieldTable tr td select { width:250px; }

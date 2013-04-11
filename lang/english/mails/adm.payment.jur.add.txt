@@ -1,0 +1,4 @@
+<p class="hps" title="Нажмите, чтобы увидеть альтернативный перевод">The site added a payment <span id="result_box" lang="en"><span class="hps" title="Нажмите, чтобы увидеть альтернативный перевод">by</span> <span class="hps" title="Нажмите, чтобы увидеть альтернативный перевод">payment</span> <span class="hps" title="Нажмите, чтобы увидеть альтернативный перевод">mode</span> <span class="hps" title="Нажмите, чтобы увидеть альтернативный перевод">for Jur. persons</span></span>.</p>
+<p><strong>Payment options:</strong></p>
+<p style="padding-left: 30px;"><strong></strong>Number of payment: <strong>%ORDER_ID%</strong><br />Description: <strong>%DESCRIPTION%</strong><br />Amount: <strong>%AMOUNT%</strong><br />Request Date: <strong>%DATE%</strong></p>
+<p>View detailed information is available in the admin panel Site: <a href="%ADMIN_PANEL%">%ADMIN_PANEL%</a></p>

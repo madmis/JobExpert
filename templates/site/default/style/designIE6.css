@@ -1,0 +1,17 @@
+table.Design_panesFormTable #add_phones { margin:0px 0px 0px 0px; padding:0px; vertical-align:top; }
+
+div.DesignLeftSideBarBlockWrapper div.submitButtonLight input {
+    padding-top:2px;
+    background-position:0 -5px;
+}
+
+div.DesignSubMenuPanelAuth div.submitButtonDark input {
+    background-position:0 -2px;
+    padding-top:3px;
+}
+
+div.Design_panesBG div.Design_panes div.submitButtonLight input {
+    padding-top:2px;
+}
+
+div.DesignSubMenuPanelAuth form table tr td a.ddlink { color: #DDDDDD; font-size:11px; font-family:Tahoma;}

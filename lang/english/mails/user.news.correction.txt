@@ -1,0 +1,4 @@
+<p><br />Added your news - <strong>%NEWS_TITLE%</strong> - has not passed moderation, and returned to the editing.</p>
+<p>Publication Date: <strong>%PUBLICATION_DATE%<br /><br /><span style="color: red;">In the news must be corrected in accordance with the comments moderator.<br /></span><br /></strong>Remarks moderator:<strong></strong></p><p style="padding-left: 30px;"><strong>%COMMENTS%</strong></p>
+<p><br />Correction News is valid until <strong>%DELDATE%</strong>, after the expiry of this period the news will be removed!</p><p>News editing is available from the user panel: <a href="%USER_PANEL_LINK%">%USER_PANEL_LINK%</a></p>
+<p><p>-----------------------</p><p>Yours sincerely,<br />Administration <a href="%SITE_URL%">%SITE_URL%</a></p><p>Contact E-Mail: <a href="mailto:%ADMIN_EMAIL%">%ADMIN_EMAIL%</a></p><p><strong><em><span style="color: red;">* This message is generated and sent to the robot. Respond to it is not necessary.</span></em></strong></p></p>
